@@ -1,6 +1,6 @@
 {
-  "name": "scandalous-structure-deliver-8kbat",
-  "productName": "scandalous-structure-deliver-8kbat",
+  "name": "lottie-player",
+  "productName": "lottie-player",
   "description": "My Electron application description",
   "keywords": [],
   "main": "./main.js",
