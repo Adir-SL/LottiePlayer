@@ -6,6 +6,6 @@
  * to expose Node.js functionality from the main process.
  */
 document.getElementById('uiButton').onclick = (event) => {
-    alert('test');
-    document.getElementById('uiButton').innerText = 'label';
+    alert(document.getElementById('files'));
+    // document.getElementById('uiButton').innerText = 'label';
 }
