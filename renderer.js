@@ -5,3 +5,7 @@
  * `contextIsolation` is turned on. Use the contextBridge API in `preload.js`
  * to expose Node.js functionality from the main process.
  */
+document.getElementById('uiButton').onclick = (event) => {
+    alert('test');
+    document.getElementById('uiButton').innerText = 'label';
+}
