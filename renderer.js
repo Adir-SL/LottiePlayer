@@ -6,6 +6,8 @@
  * to expose Node.js functionality from the main process.
  */
 document.getElementById('uiButton').onclick = (event) => {
-    alert(document.getElementById('files'));
+    alert(document.getElementById('files').files[0]);
+    document.getElementById('lottiePlayer').setAttribute(src, document.getElementById('files').files[0]);
+    // setAttribute(name, value)
     // document.getElementById('uiButton').innerText = 'label';
 }
