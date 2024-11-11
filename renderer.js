@@ -19,3 +19,5 @@ document.getElementById('uiButton').onclick = (event) => {
     alert(document.getElementById('files').files[0].relativePath);
     document.getElementById('lottiePlayer').setAttribute(src, document.getElementById('files').value);
 }
+
+// https://www.youtube.com/watch?v=TMA0vAzxydg
