@@ -1,38 +1,17 @@
-/**
- * This file is loaded via the <script> tag in the index.html file and will
- * be executed in the renderer process for that window. No Node.js APIs are
- * available in this process because `nodeIntegration` is turned off and
- * `contextIsolation` is turned on. Use the contextBridge API in `preload.js`
- * to expose Node.js functionality from the main process.
- */
+// function init() {
+//             document.getElementById('fileInput').addEventListener('change', handleFileSelect, false);
+//         }
 
-// var file = document.getElementById("files");
+//         function handleFileSelect(event) {
+//             const reader = new FileReader()
+//             reader.onload = handleFileLoad;
+//             reader.readAsText(event.target.files[0])
+//         }
 
-// file.addEventListener("change", function() {
-//     for (var i = 0; i < file.files.length; i++) {
-//         alert(file.files[i].path);
-//         document.getElementById('lottiePlayer').setAttribute(src, file.files[i].path);
-//     }
-// }, false);
-
-// document.getElementById('uiButton').onclick = (event) => {
-//     alert(document.getElementById('files').files[0].relativePath);
-//     document.getElementById('lottiePlayer').setAttribute(src, document.getElementById('files').value);
-// }
-
-const setFile = () => { 
-    alert(document.getElementById('fileUpload').files[0].name)
-}
+//         function handleFileLoad(event) {
+//             console.log(event);
+//             document.getElementById('fileContent').textContent = event.target.result;
+//         }
 
 // https://www.youtube.com/watch?v=TMA0vAzxydg
 // https://www.youtube.com/watch?v=5XyzyMqY7Cw
-
-var file = document.getElementById("fileUpload");
-
-file.addEventListener("change", function() {
-    for (var i = 0; i < file.files.length; i++) {
-        alert(file.files[0]);
-        // document.getElementById('lottiePlayer').setAttribute(src, file.files[i].path);
-        document.getElementById('lottiePlayer').setAttribute(src, file.files[0].name);
-    }
-}, false);

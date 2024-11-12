@@ -12,14 +12,26 @@
 
 <body>
   <h1>Lottie Player</h1>
-  <input type="file" accept=".json" type="file" id="fileUpload" onchange="setFile()" />
-
-  <button id="uiButton" onclick="document.getElementById('title').innerText='label';">Check</button>
+  <input id="fileInput" type="file" name="file" />
+    <pre id="fileContent"></pre>
   <br/><br/>
-  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-  <dotlottie-player src="https://lottie.host/7401522f-2d8b-4049-ad18-eb0edb6af224/CE9lFrNlEH.json"
-    background="transparent" speed="1" style="width: 300px; height: 300px" direction="1" playMode="normal" id="lottiePlayer" loop controls
-    autoplay></dotlottie-player>
+
+  <script>
+        function init() {
+            document.getElementById('fileInput').addEventListener('change', handleFileSelect, false);
+        }
+
+        function handleFileSelect(event) {
+            const reader = new FileReader()
+            reader.onload = handleFileLoad;
+            reader.readAsText(event.target.files[0])
+        }
+
+        function handleFileLoad(event) {
+            console.log(event);
+            document.getElementById('fileContent').textContent = event.target.result;
+        }
+    </script>
 
   <!-- You can also require other files to run in this process -->
   <script src="./renderer.js"></script>
