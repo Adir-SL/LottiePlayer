@@ -2,8 +2,9 @@
 <html>
 
 <head>
-  <script>
-    function init() {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+    <script>
+        function init() {
             document.getElementById('fileInput').addEventListener('change', handleFileSelect, false);
         }
 
@@ -16,14 +17,30 @@
         function handleFileLoad(event) {
             console.log(event);
             document.getElementById('fileContent').textContent = event.target.result;
+
+            loadAnim();
+
         }
-  </script>
+
+        function loadAnim() {
+            document.getElementById('lottie').innerHTML = '';
+            const animationData = JSON.parse(document.getElementById('fileContent').textContent);
+            bodymovin.loadAnimation({
+                container: document.getElementById('lottie'),
+                animationData: animationData,
+                renderer: 'svg',
+                loop: true,
+                autoplay: true
+            });
+        }
+    </script>
 </head>
 
 <body onload="init()">
-  <h1>Lottie Player</h1>
-  <input id="fileInput" type="file" name="file" accept=".json, .lottie" />
-  <pre id="fileContent"></pre>
+    <input id="fileInput" type="file" name="file" />
+    <pre id="fileContent"></pre>
+    <div id="lottie"></div>
+
 </body>
 
 </html>
