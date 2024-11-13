@@ -2,11 +2,11 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <title>Lottie Player</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
-    <script>
-        function init() {
+  <link rel="stylesheet" href="styles.css">
+  <title>Lottie Player</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+  <script>
+    function init() {
             document.getElementById('fileInput').addEventListener('change', handleFileSelect, false);
         }
 
@@ -35,14 +35,23 @@
                 autoplay: true
             });
         }
-    </script>
+  </script>
 </head>
 
 <body onload="init()">
-    <h1>Lottie Player</h1>
-    <input id="fileInput" type="file" name="file" />
-    <pre id="fileContent"></pre>
-    <div id="lottie"></div>
+  <h1>Lottie Player</h1>
+  <div class="icon-button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="icon icon-tabler icons-tabler-outline icon-tabler-folder-open">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path
+        d="M5 19l2.757 -7.351a1 1 0 0 1 .936 -.649h12.307a1 1 0 0 1 .986 1.164l-.996 5.211a2 2 0 0 1 -1.964 1.625h-14.026a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v2" />
+      </svg>
+      <input id="fileInput" type="file" name="file" />
+  </div>
+  <pre id="fileContent"></pre>
+  <div id="lottie"></div>
 
 </body>
 

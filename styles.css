@@ -23,3 +23,22 @@ body{
     max-width: 50vw;
     max-height: 50vh;
 }
+
+.icon-button{
+    position: relative;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+}
+.icon-button input{
+    font-size: 1.5em;
+    opacity: 0;
+}
+
+.icon-button svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    stroke: lightgray;
+}
