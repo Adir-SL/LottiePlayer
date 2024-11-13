@@ -12,6 +12,10 @@ body{
     display: none;
 }
 
+h1{
+    font-family: sans-serif;
+}
+
 #lottie{
     display: flex;
     justify-content: center;
