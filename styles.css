@@ -16,12 +16,18 @@ h1{
     font-family: sans-serif;
 }
 
-#lottie{
+#lottie-wrapper{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    width: fit-content;
+    height: fit-content;
+}
+#lottie-wrapper button{
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 #lottie svg{
     max-width: 50vw;
