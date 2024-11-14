@@ -39,7 +39,13 @@
         }
 
         function playPause(){
-          bodyAnim.pause();
+          if(window.paused !== 1){
+            bodyAnim.pause();
+            window.paused = 1;
+          }else{
+            bodyAnim.play();
+            window.paused = 0;
+          }
         }
   </script>
 </head>
