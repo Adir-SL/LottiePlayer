@@ -1,6 +1,6 @@
 {
-  "name": "latter-legs-scratch-gzykw",
-  "productName": "latter-legs-scratch-gzykw",
+  "name": "lottie-player",
+  "productName": "lottie-player",
   "description": "My Electron application description",
   "keywords": [],
   "main": "./main.js",
