@@ -25,10 +25,13 @@
         }
 
         function loadAnim() {
+          let button = document.createElement("button");
+          document.getElementById('lottie').append(button);
+          
             // document.getElementById('lottie').innerHTML = '';
             const animationData = JSON.parse(document.getElementById('fileContent').textContent);
             bodyAnim = bodymovin.loadAnimation({
-                container: document.getElementById('lottie'),
+                container: document.getElementById('lottie').getElementsByTagName("button")[document.getElementById('lottie').getElementsByTagName("button").length-1],
                 animationData: animationData,
                 renderer: 'svg',
                 loop: true,
