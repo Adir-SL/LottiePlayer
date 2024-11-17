@@ -13,7 +13,14 @@
         function handleFileSelect(event) {
             const reader = new FileReader()
             reader.onload = handleFileLoad;
-            reader.readAsText(event.target.files[0])
+            // reader.readAsText(event.target.files[0])
+            var x = event.target.files
+            var i;
+            for (i = 0; i < x.length; i++) {
+              reader.readAsText(x[i]);
+              alert(reader.readAsText(x[i]))
+            }
+            
         }
 
         function handleFileLoad(event) {
