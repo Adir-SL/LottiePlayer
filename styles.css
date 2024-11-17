@@ -27,6 +27,8 @@ h1{
 }
 
 #lottie button{
+    width: 45vw;
+    height: 45vh;
     max-width: 45vw;
     max-height: 45vh;
     background-color: #474956;
