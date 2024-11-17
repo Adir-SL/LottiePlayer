@@ -13,14 +13,7 @@
         function handleFileSelect(event) {
             const reader = new FileReader()
             reader.onload = handleFileLoad;
-            // reader.readAsText(event.target.files[0])
-            var x = event.target.files
-            var i;
-            for (i = 0; i < x.length; i++) {
-              reader.readAsText(x[i]);
-              alert(reader.readAsText(x[i]))
-            }
-            
+            reader.readAsText(event.target.files[0])
         }
 
         function handleFileLoad(event) {
@@ -67,7 +60,7 @@
       <path
         d="M5 19l2.757 -7.351a1 1 0 0 1 .936 -.649h12.307a1 1 0 0 1 .986 1.164l-.996 5.211a2 2 0 0 1 -1.964 1.625h-14.026a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v2" />
     </svg>
-    <input id="fileInput" type="file" name="file" title="" accept=".json" multiple />
+    <input id="fileInput" type="file" name="file" title="" accept=".json" />
   </div>
   <pre id="fileContent"></pre>
 
