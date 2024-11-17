@@ -32,7 +32,9 @@ h1{
     border-radius: 4px;
     box-shadow: 0 0 0 2px #ffffff33;
 }
-#lottie svg:focus, #lottie svg:focus-within{}
+#lottie svg:focus, #lottie svg:focus-within, #lottie svg:active{
+    box-shadow: 0 0 0 2px #3949ffc5;
+}
 .icon-button{
     position: relative;
     width: 32px;
