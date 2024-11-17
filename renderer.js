@@ -12,6 +12,3 @@
 //             console.log(event);
 //             document.getElementById('fileContent').textContent = event.target.result;
 //         }
-
-// https://www.youtube.com/watch?v=TMA0vAzxydg
-// https://www.youtube.com/watch?v=5XyzyMqY7Cw
