@@ -46,3 +46,7 @@ function playPause() {
         document.getElementById('lottie').getElementsByTagName('button')[document.activeElement.num].paused = 0;
     }
 }
+
+function devTools(){
+    mainWindow.webContents.openDevTools();
+}
