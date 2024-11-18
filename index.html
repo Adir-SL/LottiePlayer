@@ -45,7 +45,7 @@
         }
 
         function playPause(){
-          alert(document.activeElement.num)
+          // alert(document.activeElement.num)
           if(window.paused !== 1){
             document.getElementById('lottie').getElementsByTagName('button')[document.activeElement.num].bodyAnim.pause();
             window.paused = 1;
