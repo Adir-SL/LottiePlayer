@@ -47,10 +47,10 @@
         function playPause(){
           alert(document.activeElement.num)
           if(window.paused !== 1){
-            bodyAnim.pause();
+            document.getElementById('lottie').getElementsByTagName('button')[document.activeElement.num].bodyAnim.pause();
             window.paused = 1;
           }else{
-            bodyAnim.play();
+            document.getElementById('lottie').getElementsByTagName('button')[document.activeElement.num].bodyAnim.play();
             window.paused = 0;
           }
         }
