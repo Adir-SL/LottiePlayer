@@ -7,6 +7,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
   <script>
     function init() {
+      window.count = 0;
             document.getElementById('fileInput').addEventListener('change', handleFileSelect, false);
         }
 
@@ -26,11 +27,12 @@
 
         function loadAnim() {
           let button = document.createElement("button");
+          button.num = window.count;
           document.getElementById('lottie').append(button);
           
             // document.getElementById('lottie').innerHTML = '';
             const animationData = JSON.parse(document.getElementById('fileContent').textContent);
-            bodyAnim = bodymovin.loadAnimation({
+            document.getElementById('lottie').getElementsByTagName("button")[window.count].bodyAnim = bodymovin.loadAnimation({
                 container: document.getElementById('lottie').getElementsByTagName("button")[document.getElementById('lottie').getElementsByTagName("button").length-1],
                 animationData: animationData,
                 renderer: 'svg',
@@ -39,9 +41,11 @@
             });
 
             document.getElementById('lottie').getElementsByTagName('button')[0].addEventListener('click', playPause, false);
+            window.count += 1;
         }
 
         function playPause(){
+          alert(document.activeElement.num)
           if(window.paused !== 1){
             bodyAnim.pause();
             window.paused = 1;
