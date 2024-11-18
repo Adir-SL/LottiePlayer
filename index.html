@@ -28,6 +28,7 @@
         function loadAnim() {
           let button = document.createElement("button");
           button.num = window.count;
+          button.paused = 0;
           document.getElementById('lottie').append(button);
           
             // document.getElementById('lottie').innerHTML = '';
@@ -46,12 +47,12 @@
 
         function playPause(){
           // alert(document.activeElement.num)
-          if(window.paused !== 1){
+          if(document.getElementById('lottie').getElementsByTagName('button')[document.activeElement.num].paused !== 1){
             document.getElementById('lottie').getElementsByTagName('button')[document.activeElement.num].bodyAnim.pause();
-            window.paused = 1;
+            document.getElementById('lottie').getElementsByTagName('button')[document.activeElement.num].paused = 1;
           }else{
             document.getElementById('lottie').getElementsByTagName('button')[document.activeElement.num].bodyAnim.play();
-            window.paused = 0;
+            document.getElementById('lottie').getElementsByTagName('button')[document.activeElement.num].paused = 0;
           }
         }
   </script>
