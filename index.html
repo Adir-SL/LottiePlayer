@@ -46,7 +46,6 @@
         }
 
         function playPause(){
-          // alert(document.activeElement.num)
           if(document.getElementById('lottie').getElementsByTagName('button')[document.activeElement.num].paused !== 1){
             document.getElementById('lottie').getElementsByTagName('button')[document.activeElement.num].bodyAnim.pause();
             document.getElementById('lottie').getElementsByTagName('button')[document.activeElement.num].paused = 1;
