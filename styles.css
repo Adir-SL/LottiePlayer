@@ -35,13 +35,13 @@ h1{
     max-height: 45vh;
     background-color: #474956;
     border-radius: 4px;
-    box-shadow: 0 0 0 2px #ffffff33;
+    box-shadow: 0 0 0 2px #ffffff33 inset;
     outline: none;
     border: none;
 }
 
 #lottie button:focus-visible, #lottie button:focus-within, #lottie button:active{
-    box-shadow: 0 0 0 2px #828cffc5;
+    box-shadow: 0 0 0 2px #828cffc5 inset;
 }
 
 .icon-button{
