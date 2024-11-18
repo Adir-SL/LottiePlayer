@@ -40,7 +40,7 @@
                 autoplay: true,
             });
 
-            document.getElementById('lottie').getElementsByTagName('button')[0].addEventListener('click', playPause, false);
+            document.getElementById('lottie').getElementsByTagName('button')[window.count].addEventListener('click', playPause, false);
             window.count += 1;
         }
 
