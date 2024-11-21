@@ -46,7 +46,13 @@ function playPause() {
         document.getElementById('lottie').getElementsByTagName('button')[document.activeElement.num].bodyAnim.play();
         document.getElementById('lottie').getElementsByTagName('button')[document.activeElement.num].paused = 0;
     }
-    // alert(document.activeElement.num);
+    setTimeout(function(){
+        updateFocus();
+    }, 100);
+}
+
+function updateFocus(){
+    document.getElementById("focusInd").innerText = window.lastFocus.num;
 }
 
 function devTools(){
