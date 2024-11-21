@@ -54,14 +54,14 @@ function devTools(){
     mainWindow.webContents.openDevTools();
 }
 
-function closeHover(){
-  var x = document.getElementById("lottie").getElementsByTagName("button");
+function focusHover(){
+    var x = document.getElementById("lottie").getElementsByTagName("button");
     var i;
     for (i = 0; i < x.length; i++) {
         if(x[i].num == window.lastFocus.num){
             x[i].classList.add("focused");
         }else{
-          x[i].classList.remove("focused");
+            x[i].classList.remove("focused");
         }
     }
 }
