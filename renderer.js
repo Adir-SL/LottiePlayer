@@ -50,3 +50,7 @@ function playPause() {
 function devTools(){
     mainWindow.webContents.openDevTools();
 }
+
+function close(){
+    document.activeElement.outerHTML = '';
+}
