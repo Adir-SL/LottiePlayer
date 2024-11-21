@@ -79,3 +79,7 @@ h1{
 .icon-button:hover{
     background-color: #ffffff11;
 }
+
+.focused{
+  border: 1px solid red;
+}
