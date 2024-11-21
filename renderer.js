@@ -53,6 +53,14 @@ function devTools(){
 }
 
 function closeFunc(){
-    // window.lastFocus.outerHTML = '';
     alert(window.lastFocus.num)
+    var x = document.getElementById("lottie").getElementsByTagName("button");
+    var i;
+    for (i = 0; i < x.length; i++) {
+        if(x[i].num == window.lastFocus.num){
+            x[i].outerHTML = '';
+        }
+    }
+    // window.lastFocus.outerHTML = '';
+    // alert(window.lastFocus.num)
 }
