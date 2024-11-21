@@ -57,7 +57,13 @@ h1{
     width: 32px;
     height: 32px;
     overflow: hidden;
+    border-radius: 4px;
 }
+
+.icon-button svg{
+    padding: 4px;
+}
+
 .icon-button input{
     font-size: 1.5em;
     opacity: 0;
