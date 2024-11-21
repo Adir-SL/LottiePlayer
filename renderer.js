@@ -38,6 +38,7 @@ function loadAnim() {
 }
 
 function playPause() {
+    window.lastFocus = document.activeElement;
     if (document.getElementById('lottie').getElementsByTagName('button')[document.activeElement.num].paused !== 1) {
         document.getElementById('lottie').getElementsByTagName('button')[document.activeElement.num].bodyAnim.pause();
         document.getElementById('lottie').getElementsByTagName('button')[document.activeElement.num].paused = 1;
@@ -45,7 +46,6 @@ function playPause() {
         document.getElementById('lottie').getElementsByTagName('button')[document.activeElement.num].bodyAnim.play();
         document.getElementById('lottie').getElementsByTagName('button')[document.activeElement.num].paused = 0;
     }
-    window.lastFocus = document.activeElement;
 }
 
 function devTools(){
@@ -61,6 +61,4 @@ function closeFunc(){
             x[i].outerHTML = '';
         }
     }
-    // window.lastFocus.outerHTML = '';
-    // alert(window.lastFocus.num)
 }
