@@ -45,6 +45,7 @@ function playPause() {
         document.getElementById('lottie').getElementsByTagName('button')[document.activeElement.num].bodyAnim.play();
         document.getElementById('lottie').getElementsByTagName('button')[document.activeElement.num].paused = 0;
     }
+    window.lastFocus = document.activeElement;
 }
 
 function devTools(){
@@ -52,5 +53,5 @@ function devTools(){
 }
 
 function close(){
-    document.activeElement.outerHTML = '';
+    window.lastFocus.outerHTML = '';
 }
