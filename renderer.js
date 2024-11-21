@@ -35,6 +35,8 @@ function loadAnim() {
 
     document.getElementById('lottie').getElementsByTagName('button')[window.count].addEventListener('click', playPause, false);
     window.count += 1;
+
+    window.lastFocus = document.getElementById('lottie').getElementsByTagName("button")[document.getElementById('lottie').getElementsByTagName("button").length - 1];
 }
 
 function playPause() {
