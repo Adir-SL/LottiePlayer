@@ -52,6 +52,7 @@ function devTools(){
     mainWindow.webContents.openDevTools();
 }
 
-function close(){
-    window.lastFocus.outerHTML = '';
+function closeFunc(){
+    // window.lastFocus.outerHTML = '';
+    alert(window.lastFocus.num)
 }
