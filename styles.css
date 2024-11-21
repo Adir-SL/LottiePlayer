@@ -76,6 +76,6 @@ h1{
     pointer-events: none;
     stroke: gray;
 }
-.icon-button:hover svg{
-    opacity: 0.8;
+.icon-button:hover{
+    background-color: #ffffff11;
 }
