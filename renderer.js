@@ -39,12 +39,12 @@ function loadAnim() {
 
 function playPause() {
     window.lastFocus = document.activeElement;
-    if (document.getElementById('lottie').getElementsByTagName('button')[document.activeElement.num].paused !== 1) {
-        document.getElementById('lottie').getElementsByTagName('button')[document.activeElement.num].bodyAnim.pause();
-        document.getElementById('lottie').getElementsByTagName('button')[document.activeElement.num].paused = 1;
+    if (document.activeElement.paused !== 1) {
+        document.activeElement.bodyAnim.pause();
+        document.activeElement.paused = 1;
     } else {
-        document.getElementById('lottie').getElementsByTagName('button')[document.activeElement.num].bodyAnim.play();
-        document.getElementById('lottie').getElementsByTagName('button')[document.activeElement.num].paused = 0;
+        document.activeElement.bodyAnim.play();
+        document.activeElement.paused = 0;
     }
     setTimeout(function(){
         updateFocus();
