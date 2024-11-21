@@ -43,7 +43,10 @@ h1{
 #lottie button:focus-visible, #lottie button:focus-within, #lottie button:active{
     box-shadow: 0 0 0 2px #828cffc5 inset;
 }
-
+.flex-icons{
+    display: flex;
+    gap: 8px;
+}
 .icon-button{
     position: relative;
     width: 32px;
