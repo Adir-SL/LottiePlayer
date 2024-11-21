@@ -80,6 +80,6 @@ h1{
     background-color: #ffffff11;
 }
 
-#closeButton:hover + #lottie .focused{
+.flex-icons:has(#closeButton:hover) ~ #lottie .focused{
   border: 1px solid red !important;
 }
