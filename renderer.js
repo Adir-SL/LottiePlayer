@@ -46,13 +46,6 @@ function playPause() {
         document.activeElement.bodyAnim.play();
         document.activeElement.paused = 0;
     }
-    setTimeout(function(){
-        updateFocus();
-    }, 100);
-}
-
-function updateFocus(){
-    document.getElementById("focusInd").innerText = window.lastFocus.num;
 }
 
 function devTools(){
