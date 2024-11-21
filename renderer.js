@@ -65,7 +65,7 @@ function closeFunc(){
     var i;
     for (i = 0; i < x.length; i++) {
         if(x[i].num == window.lastFocus.num){
-            x[i].outerHTML = '';
+            x[i].innerText = '';
         }
     }
 }
