@@ -54,7 +54,9 @@ function devTools(){
     mainWindow.webContents.openDevTools();
 }
 
-function closeFunc(){
+function closeHover(){}
+
+function closeClick(){
     var x = document.getElementById("lottie").getElementsByTagName("button");
     var i;
     for (i = 0; i < x.length; i++) {
