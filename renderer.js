@@ -37,6 +37,7 @@ function loadAnim() {
     window.count += 1;
 
     window.lastFocus = document.getElementById('lottie').getElementsByTagName("button")[document.getElementById('lottie').getElementsByTagName("button").length - 1];
+    focusHover();
 }
 
 function playPause() {
@@ -48,6 +49,7 @@ function playPause() {
         document.activeElement.bodyAnim.play();
         document.activeElement.paused = 0;
     }
+    focusHover();
 }
 
 function devTools(){
