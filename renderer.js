@@ -76,4 +76,5 @@ function closeClick(){
             x[i].innerText = '';
         }
     }
+    document.getElementById("fileInput").value = '';
 }
