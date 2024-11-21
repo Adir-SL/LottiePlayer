@@ -54,7 +54,17 @@ function devTools(){
     mainWindow.webContents.openDevTools();
 }
 
-function closeHover(){}
+function closeHover(){
+  var x = document.getElementById("lottie").getElementsByTagName("button");
+    var i;
+    for (i = 0; i < x.length; i++) {
+        if(x[i].num == window.lastFocus.num){
+            x[i].classList.add("focused");
+        }else{
+          x[i].classList.remove("focused");
+        }
+    }
+}
 
 function closeClick(){
     var x = document.getElementById("lottie").getElementsByTagName("button");
