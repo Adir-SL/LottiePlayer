@@ -55,7 +55,6 @@ function devTools(){
 }
 
 function closeFunc(){
-    // alert(window.lastFocus.num)
     var x = document.getElementById("lottie").getElementsByTagName("button");
     var i;
     for (i = 0; i < x.length; i++) {
