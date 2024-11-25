@@ -79,6 +79,9 @@ h1{
 .icon-button:hover{
     background-color: #ffffff11;
 }
+.icon-button:active{
+    opacity: 0.8;
+}
 
 .flex-icons:has(#closeButton:hover) ~ #lottie .focused{
   box-shadow: 0 0 0 2px #ffffff33 inset, 0 0 0 2px #ff0000;
