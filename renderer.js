@@ -78,3 +78,15 @@ function closeClick(){
     }
     document.getElementById("fileInput").value = '';
 }
+
+function fullScreenClick(){
+    var x = document.getElementById("lottie").getElementsByTagName("button");
+    var i;
+    for (i = 0; i < x.length; i++) {
+        if(x[i].num == window.lastFocus.num){
+            x[i].classList.add('bigger');
+        }else{
+            x[i].classList.remove('bigger');
+        }
+    }
+}
