@@ -40,6 +40,10 @@ h1{
     border: none;
 }
 
+#lottie button.bigger{
+    background-color: pink;
+}
+
 #lottie button:focus-visible, #lottie button:focus-within, #lottie button:active{
     box-shadow: 0 0 0 2px #828cffc5 inset;
 }
