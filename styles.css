@@ -41,7 +41,10 @@ h1{
 }
 
 #lottie button.bigger{
-    background-color: pink;
+    width: 80vw;
+    height: 80vh;
+    max-width: 80vw;
+    max-height: 80vh;
 }
 
 #lottie button:focus-visible, #lottie button:focus-within, #lottie button:active{
