@@ -41,7 +41,7 @@ h1{
     border: none;
 }
 
-#lottie button.bigger{
+#lottie:has(button.bigger) button.bigger{
     width: 80vw;
     height: 80vh;
     max-width: 80vw;
@@ -52,6 +52,12 @@ h1{
 #lottie:has(button.bigger){
     flex-direction: column;
     flex-wrap: nowrap;
+}
+#lottie:has(button.bigger) button{
+    width: 25vw;
+    height: 25vh;
+    max-width: 25vw;
+    max-height: 25vh;
 }
 
 #lottie button:focus-visible, #lottie button:focus-within, #lottie button:active{
