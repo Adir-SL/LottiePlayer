@@ -17,6 +17,7 @@ h1{
 }
 
 #lottie{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,6 +46,12 @@ h1{
     height: 80vh;
     max-width: 80vw;
     max-height: 80vh;
+    position: absolute;
+}
+
+#lottie:has(button.bigger){
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 #lottie button:focus-visible, #lottie button:focus-within, #lottie button:active{
