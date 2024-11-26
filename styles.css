@@ -55,8 +55,6 @@ h1{
     max-width: 80vw;
     max-height: 80vh;
     display: block;
-    /* position: absolute; */
-    /* margin: 0 calc(15vw + 16px); */
 }
 
 #lottie button:focus-visible, #lottie button:focus-within, #lottie button:active{
