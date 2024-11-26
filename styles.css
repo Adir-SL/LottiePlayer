@@ -59,6 +59,7 @@ h1{
     height: 80vh;
     max-width: 80vw;
     max-height: 80vh;
+    display: block;
     /* position: absolute; */
     /* margin: 0 calc(15vw + 16px); */
 }
