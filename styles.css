@@ -41,11 +41,6 @@ h1{
     border: none;
 }
 
-#lottie:has(button.bigger){
-    /* flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: flex-start; */
-}
 #lottie:has(button.bigger) button{
     width: 15vw;
     height: 15vh;
