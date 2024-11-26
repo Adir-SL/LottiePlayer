@@ -42,9 +42,9 @@ h1{
 }
 
 #lottie:has(button.bigger){
-    flex-direction: column;
+    /* flex-direction: column;
     flex-wrap: nowrap;
-    align-items: flex-start;
+    align-items: flex-start; */
 }
 #lottie:has(button.bigger) button{
     width: 15vw;
