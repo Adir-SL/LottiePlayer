@@ -51,6 +51,7 @@ h1{
     height: 15vh;
     max-width: 15vw;
     max-height: 15vh;
+    display: none;
 }
 
 #lottie:has(button.bigger) button.bigger{
@@ -59,7 +60,7 @@ h1{
     max-width: 80vw;
     max-height: 80vh;
     position: absolute;
-    margin: 0 calc(15vw + 16px);
+    /* margin: 0 calc(15vw + 16px); */
 }
 
 #lottie button:focus-visible, #lottie button:focus-within, #lottie button:active{
