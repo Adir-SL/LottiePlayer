@@ -91,6 +91,7 @@ function fullScreenClick(){
         }
     }
     window.fullScreened = 1;
+    document.getElementById("fullScreenButton").classList.add('minimize');
   }else{
     var x = document.getElementById("lottie").getElementsByTagName("button");
     var i;
@@ -98,5 +99,6 @@ function fullScreenClick(){
       x[i].classList.remove('bigger');
     }
     window.fullScreened = 0;
+    document.getElementById("fullScreenButton").classList.remove('minimize');
   }
 }
