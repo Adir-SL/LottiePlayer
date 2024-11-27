@@ -42,10 +42,10 @@ h1{
 }
 
 #lottie:has(button.bigger) button{
-    width: 15vw;
-    height: 15vh;
-    max-width: 15vw;
-    max-height: 15vh;
+    width: 0;
+    height: 0;
+    max-width: 0;
+    max-height: 0;
     display: none;
 }
 
