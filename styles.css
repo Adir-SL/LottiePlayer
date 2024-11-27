@@ -56,7 +56,6 @@ h1{
     max-height: 100%;
     opacity: 1;
     display: block;
-    /* transition: all 150ms ease-in-out 150ms allow-discrete; */
 }
 
 #lottie button:focus-visible, #lottie button:focus-within, #lottie button:active{
