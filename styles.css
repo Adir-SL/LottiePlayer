@@ -39,7 +39,7 @@ h1{
     box-shadow: 0 0 0 2px #ffffff33 inset;
     outline: none;
     border: none;
-    transition: all 150ms ease-in-out 150ms allow-discrete, opacity 150ms ease-in-out 0s allow-discrete;
+    transition: all 150ms ease-in-out 0s allow-discrete, opacity 150ms ease-in-out 150ms allow-discrete;
 }
 
 #lottie:has(button.bigger) button{
@@ -47,6 +47,7 @@ h1{
     height: 0;
     opacity: 0;
     display: none;
+    transition: all 150ms ease-in-out 150ms allow-discrete, opacity 150ms ease-in-out 0s allow-discrete;
 }
 
 #lottie:has(button.bigger) button.bigger{
