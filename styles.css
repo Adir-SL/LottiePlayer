@@ -103,3 +103,16 @@ h1{
 .flex-icons:has(#closeButton:hover) ~ #lottie .focused, .flex-icons:has(#fullScreenButton:hover) ~ #lottie .focused{
   box-shadow: 0 0 0 2px #ffffff33 inset, 0 0 0 2px #ff0000;
 }
+
+#fullScreenButton .mini{
+    display: none;
+}
+#fullScreenButton .maxi{
+    display: block;
+}
+#fullScreenButton.minimize #mini{
+    display: block;
+}
+#fullScreenButton.minimize #maxi{
+    display: none;
+}
