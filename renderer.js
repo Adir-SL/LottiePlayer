@@ -80,6 +80,7 @@ function closeClick(){
 }
 
 function fullScreenClick(){
+  if(window.fullScreened !== 1){
     var x = document.getElementById("lottie").getElementsByTagName("button");
     var i;
     for (i = 0; i < x.length; i++) {
@@ -89,4 +90,13 @@ function fullScreenClick(){
             x[i].classList.remove('bigger');
         }
     }
+    window.fullScreened = 1;
+  }else{
+    var x = document.getElementById("lottie").getElementsByTagName("button");
+    var i;
+    for (i = 0; i < x.length; i++) {
+      x[i].classList.remove('bigger');
+    }
+    window.fullScreened = 0;
+  }
 }
