@@ -103,7 +103,8 @@ h1{
     top: 0;
     left: 0;
     pointer-events: none;
-    stroke: gray;
+    stroke: var(--iconColor);
+    stroke-width: 1.5;
 }
 .icon-button:hover{
     background-color: #ffffff11;
