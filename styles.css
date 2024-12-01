@@ -71,6 +71,7 @@ h1{
     display: flex;
     gap: 8px;
 }
+
 .icon-button{
     position: relative;
     width: 32px;
