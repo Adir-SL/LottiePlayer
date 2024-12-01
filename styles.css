@@ -132,7 +132,7 @@ h1{
 
 .divider{
     height: 24px;
-    width: 1px;
+    width: 1.5px;
     background-color: var(--iconColor);
     opacity: .4;
 }
