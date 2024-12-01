@@ -102,3 +102,7 @@ function fullScreenClick(){
     document.getElementById("fullScreenButton").classList.remove('minimize');
   }
 }
+
+function playAll(){
+    
+}
