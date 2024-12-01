@@ -122,3 +122,9 @@ h1{
 #fullScreenButton.minimize #maxi{
     display: none;
 }
+
+.divider{
+    height: 24px;
+    width: 1px;
+    background-color: red;
+}
