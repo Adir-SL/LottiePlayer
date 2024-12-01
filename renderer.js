@@ -104,5 +104,10 @@ function fullScreenClick(){
 }
 
 function playAll(){
-    
+    var x = document.getElementById("lottie").getElementsByTagName("button");
+    var i;
+    for (i = 0; i < x.length; i++) {
+      x[i].bodyAnim.play();
+        x[i].paused = 0;
+    }
 }
