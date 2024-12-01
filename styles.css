@@ -132,5 +132,6 @@ h1{
 .divider{
     height: 24px;
     width: 1px;
-    background-color: #ACACAC;
+    background-color: var(--iconColor);
+    opacity: .4;
 }
