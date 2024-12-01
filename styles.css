@@ -1,4 +1,8 @@
 /* *{border: 1px solid red;} */
+
+:root{
+    --iconColor: #ACACAC;
+}
 body{
     background-color: #30323f;
     color: #ffffff;
@@ -127,5 +131,5 @@ h1{
 .divider{
     height: 24px;
     width: 1px;
-    background-color: red;
+    background-color: #ACACAC;
 }
