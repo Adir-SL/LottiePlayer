@@ -78,6 +78,9 @@ h1{
     overflow: hidden;
     border-radius: 4px;
 }
+.rotate-icon{
+    transform: rotate(90deg);
+}
 
 .icon-button svg{
     padding: 4px;
