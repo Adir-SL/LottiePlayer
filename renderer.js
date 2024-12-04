@@ -77,6 +77,9 @@ function closeClick(){
         }
     }
     document.getElementById("fileInput").value = '';
+    if(window.fullScreened == 1){
+        fullScreenClick();
+    }
 }
 
 function fullScreenClick(){
