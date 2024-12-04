@@ -11,6 +11,8 @@
     --focusColor: #828cffc5;
     --activeColor: #828cffc5;
     --shadowStroke: #ffffff33;
+
+    --buttonColor: #474956;
 }
 
 body{
@@ -49,7 +51,7 @@ h1{
     height: 45vh;
     max-width: 45vw;
     max-height: 45vh;
-    background-color: #474956;
+    background-color: var(--buttonColor);
     border-radius: 4px;
     box-shadow: 0 0 0 2px var(--shadowStroke) inset;
     outline: none;
