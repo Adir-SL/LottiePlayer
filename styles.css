@@ -13,6 +13,7 @@
     --shadowStroke: #ffffff33;
 
     --buttonColor: #474956;
+    --buttonHover: #ffffff11;
 }
 
 body{
@@ -128,7 +129,7 @@ h1{
     stroke-width: 1.5;
 }
 .icon-button:hover{
-    background-color: #ffffff11;
+    background-color: var(--buttonHover);
 }
 .icon-button:active{
     opacity: 0.8;
