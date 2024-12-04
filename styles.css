@@ -2,14 +2,17 @@
 
 :root{
     --bodyColor: #30323F;
+    --textColor: #ffffff;
     --iconColor: #ACACAC;
     --navColor: #43465A;
     --strokeColor: #585A6A;
+    --focusColor: #828cffc5;
+    --activeColor: #828cffc5;
 }
 
 body{
     background-color: var(--bodyColor);
-    color: #ffffff;
+    color: var(--textColor);
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -69,7 +72,7 @@ h1{
 }
 
 #lottie button:focus-visible, #lottie button:focus-within, #lottie button:active{
-    box-shadow: 0 0 0 2px #828cffc5 inset;
+    box-shadow: 0 0 0 2px var(--activeColor) inset;
 }
 
 #lottie button:empty{
@@ -127,7 +130,7 @@ h1{
 }
 
 .navbar:has(#closeButton:hover) ~ #lottie .focused, .navbar:has(#fullScreenButton:hover) ~ #lottie .focused{
-  box-shadow: 0 0 0 2px #ffffff33 inset, 0 0 0 2px #828cffc5;
+  box-shadow: 0 0 0 2px #ffffff33 inset, 0 0 0 2px var(--focusColor);
 }
 
 #fullScreenButton #mini{
