@@ -29,10 +29,6 @@ body{
     display: none;
 }
 
-h1{
-    font-family: sans-serif;
-}
-
 #lottie{
     position: relative;
     display: flex;
