@@ -127,7 +127,7 @@ h1{
 }
 
 .navbar:has(#closeButton:hover) ~ #lottie .focused, .navbar:has(#fullScreenButton:hover) ~ #lottie .focused{
-  box-shadow: 0 0 0 2px #ffffff33 inset, 0 0 0 2px #ff0000;
+  box-shadow: 0 0 0 2px #ffffff33 inset, 0 0 0 2px #828cffc5;
 }
 
 #fullScreenButton #mini{
