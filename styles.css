@@ -1,13 +1,14 @@
 /* *{border: 1px solid red;} */
 
 :root{
+    --bodyColor: #30323F;
     --iconColor: #ACACAC;
     --navColor: #43465A;
     --strokeColor: #585A6A;
 }
 
 body{
-    background-color: #30323f;
+    background-color: var(--bodyColor);
     color: #ffffff;
     display: flex;
     flex-direction: column;
