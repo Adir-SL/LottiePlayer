@@ -73,9 +73,14 @@ h1{
 }
 
 .navbar{
+    position: absolute;
+    top: 32px;
+    left: 50vw;
+    transform: translate(-50%, 0);
     display: flex;
     align-items: center;
     gap: 8px;
+    z-index: 9;
 }
 
 .icon-button{
