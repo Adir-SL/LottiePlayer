@@ -23,6 +23,7 @@ body{
     flex-direction: column;
     position: absolute;
     inset: 0;
+    font-family: sans-serif;
 }
 
 #fileContent{
