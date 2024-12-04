@@ -7,9 +7,10 @@
 
     --navColor: #43465A;
     --strokeColor: #585A6A;
-    
+
     --focusColor: #828cffc5;
     --activeColor: #828cffc5;
+    --shadowStroke: #ffffff33;
 }
 
 body{
@@ -50,7 +51,7 @@ h1{
     max-height: 45vh;
     background-color: #474956;
     border-radius: 4px;
-    box-shadow: 0 0 0 2px #ffffff33 inset;
+    box-shadow: 0 0 0 2px var(--shadowStroke) inset;
     outline: none;
     border: none;
     transition: none;
@@ -132,7 +133,7 @@ h1{
 }
 
 .navbar:has(#closeButton:hover) ~ #lottie .focused, .navbar:has(#fullScreenButton:hover) ~ #lottie .focused{
-  box-shadow: 0 0 0 2px #ffffff33 inset, 0 0 0 2px var(--focusColor);
+  box-shadow: 0 0 0 2px var(--shadowStroke) inset, 0 0 0 2px var(--focusColor);
 }
 
 #fullScreenButton #mini{
