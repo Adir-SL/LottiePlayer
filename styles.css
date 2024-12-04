@@ -72,7 +72,7 @@ h1{
     display: none;
 }
 
-.flex-icons{
+.navbar{
     display: flex;
     align-items: center;
     gap: 8px;
@@ -113,7 +113,7 @@ h1{
     opacity: 0.8;
 }
 
-.flex-icons:has(#closeButton:hover) ~ #lottie .focused, .flex-icons:has(#fullScreenButton:hover) ~ #lottie .focused{
+.navbar:has(#closeButton:hover) ~ #lottie .focused, .navbar:has(#fullScreenButton:hover) ~ #lottie .focused{
   box-shadow: 0 0 0 2px #ffffff33 inset, 0 0 0 2px #ff0000;
 }
 
