@@ -173,6 +173,7 @@ body{
     z-index: 9;
     user-select: none;
     opacity: 0;
+    border-radius: 8px;
     /* display: none; */
     transition: all 100ms linear 0s allow-discrete;
 }
