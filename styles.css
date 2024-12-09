@@ -101,7 +101,7 @@ body{
     position: relative;
     width: 32px;
     height: 32px;
-    overflow: hidden;
+    /* overflow: hidden; */
     border-radius: 4px;
 }
 .rotate-icon{
@@ -161,12 +161,14 @@ body{
     position: relative;
 }
 *[tool-tip]::after{
-    content:attr(tool-tip);
+    content:'OPEN';
     position: absolute;
     padding: 8px;
     background-color: #000000;
-    top: -calc(100% - 16px;)
+    top: calc(100% - 16px);
+    left: 50%;
+    z-index: 9;
 }
 *[tool-tip]:hover{
-    
+    display: block;
 }
