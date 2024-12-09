@@ -161,12 +161,15 @@ body{
     position: relative;
 }
 *[tool-tip]::after{
-    content:'OPEN';
+    content:attr(tool-tip);
     position: absolute;
     padding: 8px;
     background-color: #000000;
-    top: calc(100% - 16px);
+    top: calc(-100%);
     left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    white-space: nowrap;
     z-index: 9;
 }
 *[tool-tip]:hover{
