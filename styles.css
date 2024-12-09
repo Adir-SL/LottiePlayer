@@ -156,3 +156,8 @@ body{
     background-color: var(--iconColor);
     opacity: .4;
 }
+
+*[tool-tip]{}
+*[tool-tip]:hover{
+    
+}
