@@ -115,6 +115,7 @@ body{
 .icon-button input{
     font-size: 1.5em;
     opacity: 0;
+    width: 100%;
 }
 
 .icon-button svg{
