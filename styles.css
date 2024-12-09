@@ -173,7 +173,9 @@ body{
     z-index: 9;
     user-select: none;
     opacity: 0;
+    display: none;
 }
-*[tool-tip]:hover{
+*[tool-tip]:hover::after{
     opacity: 1;
+    display: block;
 }
