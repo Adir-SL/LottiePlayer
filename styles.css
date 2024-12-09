@@ -183,11 +183,11 @@ body{
     /* display: block; */
     transition: all 100ms linear 1000ms allow-discrete;
 }
-body #closeButton{
+body #closeButton, body #fullScreenButton{
     opacity: 0.3;
     pointer-events: none;
 }
-body:has(button) #closeButton{
+body:has(button) #closeButton, body:has(button) #fullScreenButton{
   opacity: 1;
   pointer-events: all;
 }
