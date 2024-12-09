@@ -157,7 +157,16 @@ body{
     opacity: .4;
 }
 
-*[tool-tip]{}
+*[tool-tip]{
+    position: relative;
+}
+*[tool-tip]::after{
+    content:attr(tool-tip);
+    position: absolute;
+    padding: 8px;
+    background-color: #000000;
+    top: -calc(100% - 16px;)
+}
 *[tool-tip]:hover{
     
 }
