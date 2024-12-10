@@ -166,6 +166,7 @@ body{
     position: absolute;
     padding: 8px;
     background-color: #000000;
+    color: #999999;
     top: calc(-100%);
     left: 50%;
     transform: translateX(-50%);
