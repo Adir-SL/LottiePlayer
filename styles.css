@@ -184,7 +184,7 @@ body{
     transition: all 100ms linear 1000ms allow-discrete;
 }
 
-body:has(button svg + button svg) #openButton{
+body:has(button:has(svg) + button:has(svg)) #openButton{
     opacity: 0.3;
     pointer-events: none;
 }
