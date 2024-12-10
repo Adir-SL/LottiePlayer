@@ -201,6 +201,6 @@ body::after{
     transform: translate(-50%, -50%);
     display: block;
 }
-body:has(button)::after{
+body:has(button svg)::after{
     display: none;
 }
