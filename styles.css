@@ -192,3 +192,10 @@ body:has(button) #closeButton, body:has(button) #fullScreenButton, body:has(butt
   opacity: 1;
   pointer-events: all;
 }
+
+body::after{
+    content: 'Open a compatible json file to get started.';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
