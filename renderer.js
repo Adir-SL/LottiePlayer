@@ -74,7 +74,7 @@ function closeClick(){
     for (i = 0; i < x.length; i++) {
         if(x[i].num == window.lastFocus.num){
             x[i].innerText = '';
-            x[i].className = 'deleted'
+            x[i].className = 'deleted';
         }
     }
     document.getElementById("fileInput").value = '';
