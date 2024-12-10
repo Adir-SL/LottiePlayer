@@ -2,7 +2,7 @@
 
 :root{
     --bodyColor: #30323F;
-    --textColor: #ffffff;
+    --textColor: #999999;
     --iconColor: #ACACAC;
 
     --navColor: #43465A;
@@ -166,7 +166,6 @@ body{
     position: absolute;
     padding: 8px;
     background-color: #000000;
-    color: #999999;
     top: calc(-100%);
     left: 50%;
     transform: translateX(-50%);
@@ -188,7 +187,7 @@ body #closeButton, body #fullScreenButton, body #playAllButton{
     opacity: 0.3;
     pointer-events: none;
 }
-body:has(button) #closeButton, body:has(button) #fullScreenButton, body:has(button) #playAllButton{
+body:has(button svg) #closeButton, body:has(button svg) #fullScreenButton, body:has(button svg) #playAllButton{
   opacity: 1;
   pointer-events: all;
 }
