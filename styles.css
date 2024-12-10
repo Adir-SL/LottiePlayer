@@ -183,10 +183,13 @@ body{
     /* display: block; */
     transition: all 100ms linear 1000ms allow-discrete;
 }
+
+
 body #closeButton, body #fullScreenButton, body #playAllButton{
     opacity: 0.3;
     pointer-events: none;
 }
+
 body:has(button svg) #closeButton, body:has(button svg) #fullScreenButton, body:has(button svg) #playAllButton{
   opacity: 1;
   pointer-events: all;
