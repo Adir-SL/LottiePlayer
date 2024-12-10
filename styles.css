@@ -185,6 +185,7 @@ body{
 }
 
 body:has(button:not('.deleted') ~ button:not('.deleted')) #openButton{
+    /* fix this */
     opacity: 0.3;
     pointer-events: none;
 }
