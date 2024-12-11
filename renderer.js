@@ -124,7 +124,7 @@ function loopClick(){
         for (i = 0; i < x.length; i++) {
             x[i].bodyAnim.loop = true;
         }
-        document.getElementById("loopButton").classList.add("playOnce");
+        document.getElementById("loopButton").classList.remove("playOnce");
         window.loopAll = true;
     }else{
         var x = document.getElementById("lottie").getElementsByTagName("button");
@@ -132,7 +132,7 @@ function loopClick(){
         for (i = 0; i < x.length; i++) {
             x[i].bodyAnim.loop = false;
         }
-        document.getElementById("loopButton").classList.remove("playOnce");
+        document.getElementById("loopButton").classList.add("playOnce");
         window.loopAll = false;
     }
 }

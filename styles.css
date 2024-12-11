@@ -150,6 +150,19 @@ body{
     display: none;
 }
 
+#loopButton #loop{
+    display: block;
+}
+#loopButton #once{
+    display: none;
+}
+#loopButton.playOnce #loop{
+    display: none;
+}
+#loopButton.playOnce #once{
+    display: block;
+}
+
 .divider{
     height: 24px;
     width: 1.5px;
