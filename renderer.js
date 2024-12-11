@@ -44,8 +44,8 @@ function loadAnim() {
 function playPause() {
     window.lastFocus = document.activeElement;
     if (document.activeElement.paused !== 1) {
-        // document.activeElement.bodyAnim.pause();
-        document.activeElement.bodyAnim.loop = false;
+        document.activeElement.bodyAnim.pause();
+        // document.activeElement.bodyAnim.loop = false;
         document.activeElement.paused = 1;
     } else {
         document.activeElement.bodyAnim.play();
