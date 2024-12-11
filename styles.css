@@ -184,8 +184,8 @@ body{
     transition: all 100ms linear 1000ms allow-discrete;
 }
 
+/* number of animations */
 body:has(button.active ~ button.active) #openButton{
-    /* fix this */
     opacity: 0.3;
     pointer-events: none;
 }
