@@ -118,9 +118,19 @@ function playAll(){
 }
 
 function loopClick(){
-    var x = document.getElementById("lottie").getElementsByTagName("button");
-    var i;
-    for (i = 0; i < x.length; i++) {
-      x[i].bodyAnim.loop = false;
+    if(window.loopAll == false){
+        var x = document.getElementById("lottie").getElementsByTagName("button");
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].bodyAnim.loop = true;
+        }
+        window.loopAll = false;
+    }else{
+        var x = document.getElementById("lottie").getElementsByTagName("button");
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].bodyAnim.loop = false;
+        }
+        window.loopAll = true;
     }
 }
