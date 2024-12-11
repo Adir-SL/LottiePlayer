@@ -20,6 +20,7 @@ function handleFileLoad(event) {
 function loadAnim() {
     let button = document.createElement("button");
     button.num = window.count;
+    button.className = "active";
     button.paused = 0;
     document.getElementById('lottie').append(button);
 
@@ -74,7 +75,7 @@ function closeClick(){
     for (i = 0; i < x.length; i++) {
         if(x[i].num == window.lastFocus.num){
             x[i].innerText = '';
-            x[i].className = 'deleted';
+            x[i].className = '';
         }
     }
     document.getElementById("fileInput").value = '';
