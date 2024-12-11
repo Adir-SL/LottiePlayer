@@ -124,13 +124,13 @@ function loopClick(){
         for (i = 0; i < x.length; i++) {
             x[i].bodyAnim.loop = true;
         }
-        window.loopAll = false;
+        window.loopAll = true;
     }else{
         var x = document.getElementById("lottie").getElementsByTagName("button");
         var i;
         for (i = 0; i < x.length; i++) {
             x[i].bodyAnim.loop = false;
         }
-        window.loopAll = true;
+        window.loopAll = false;
     }
 }
