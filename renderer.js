@@ -118,5 +118,9 @@ function playAll(){
 }
 
 function loopClick(){
-    document.activeElement.bodyAnim.loop = false;
+    var x = document.getElementById("lottie").getElementsByTagName("button");
+    var i;
+    for (i = 0; i < x.length; i++) {
+      x[i].bodyAnim.loop = false;
+    }
 }
