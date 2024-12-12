@@ -37,6 +37,7 @@ function loadAnim() {
     document.getElementById('lottie').getElementsByTagName('button')[window.count].addEventListener('click', playPause, false);
     window.count += 1;
 
+    window.lastLastFocus = window.lastFocus;
     window.lastFocus = document.getElementById('lottie').getElementsByTagName("button")[document.getElementById('lottie').getElementsByTagName("button").length - 1];
     focusHover();
 }
@@ -73,7 +74,6 @@ function closeClick(){
     var x = document.getElementById("lottie").getElementsByTagName("button");
     var i;
     for (i = 0; i < x.length; i++) {
-        alert(x[i].num)
         if(x[i].num == window.lastFocus.num){
             x[i].innerText = '';
             x[i].className = '';
@@ -84,8 +84,8 @@ function closeClick(){
         fullScreenClick();
     }
 
-alert(document.getElementById("lottie").getElementsByClassName("active").length)
-    window.lastFocus.num = document.getElementById("lottie").getElementsByClassName("active").length - 1;
+// alert(document.getElementById("lottie").getElementsByClassName("active").length)
+    window.lastFocus.num = window.lastLastFocus.num;
 }
 
 function fullScreenClick(){
