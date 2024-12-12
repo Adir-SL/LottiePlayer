@@ -73,6 +73,7 @@ function closeClick(){
     var x = document.getElementById("lottie").getElementsByTagName("button");
     var i;
     for (i = 0; i < x.length; i++) {
+        alert(x[i].num)
         if(x[i].num == window.lastFocus.num){
             x[i].innerText = '';
             x[i].className = '';
