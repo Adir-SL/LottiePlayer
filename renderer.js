@@ -74,8 +74,8 @@ function closeClick(){
     var i;
     for (i = 0; i < x.length; i++) {
         if(x[i].num == window.lastFocus.num){
-            x[i].className = '';
             x[i].innerText = '';
+            x[i].className = '';
         }
     }
     document.getElementById("fileInput").value = '';
