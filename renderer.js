@@ -74,8 +74,8 @@ function closeClick(){
     var i;
     for (i = 0; i < x.length; i++) {
         if(x[i].num == window.lastFocus.num){
-            x[i].innerText = '';
             x[i].className = '';
+            x[i].innerText = '';
         }
     }
     document.getElementById("fileInput").value = '';
@@ -83,7 +83,7 @@ function closeClick(){
         fullScreenClick();
     }
 
-// alert(document.getElementById("lottie").getElementsByClassName("active").length)
+alert(document.getElementById("lottie").getElementsByClassName("active").length)
     window.lastFocus.num = document.getElementById("lottie").getElementsByClassName("active").length - 1;
 }
 
