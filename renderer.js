@@ -43,6 +43,7 @@ function loadAnim() {
 }
 
 function playPause() {
+    window.lastLastFocus = window.lastFocus
     window.lastFocus = document.activeElement;
     if (document.activeElement.paused !== 1) {
         document.activeElement.bodyAnim.pause();
@@ -83,9 +84,7 @@ function closeClick(){
     if(window.fullScreened == 1){
         fullScreenClick();
     }
-
-// alert(document.getElementById("lottie").getElementsByClassName("active").length)
-    window.lastFocus.num = window.lastLastFocus.num;
+    window.lastFocus = window.lastLastFocus;
 }
 
 function fullScreenClick(){
