@@ -82,6 +82,8 @@ function closeClick(){
     if(window.fullScreened == 1){
         fullScreenClick();
     }
+
+    window.lastFocus.num = document.getElementById("lottie").getElementsByClassName("active").length;
 }
 
 function fullScreenClick(){
