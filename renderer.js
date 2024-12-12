@@ -83,7 +83,7 @@ function closeClick(){
         fullScreenClick();
     }
 
-    window.lastFocus.num = document.getElementById("lottie").getElementsByClassName("active").length;
+    window.lastFocus.num = document.getElementById("lottie").getElementsByClassName("active").length - 1;
 }
 
 function fullScreenClick(){
