@@ -30,7 +30,7 @@ function loadAnim() {
         container: document.getElementById('lottie').getElementsByTagName("button")[document.getElementById('lottie').getElementsByTagName("button").length - 1],
         animationData: animationData,
         renderer: 'svg',
-        loop: true,
+        loop: window.loopAll,
         autoplay: true,
     });
 
