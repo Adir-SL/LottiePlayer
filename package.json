@@ -12,17 +12,5 @@
   "dependencies": {},
   "devDependencies": {
     "electron": "31.2.1"
-  },
-  "build": {
-    "appId": "com.adirsl.lottieplayer",
-    "win": {
-      "icon": "close.png"
-    },
-    "mac": {
-      "icon": "close-512.icns"
-    },
-    "linux": {
-      "icon": "close.png"
-    }
   }
 }
