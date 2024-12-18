@@ -7,7 +7,7 @@ function createWindow () {
   const mainWindow = new BrowserWindow({
     width: 1024,
     height: 768,
-    titleBarStyle: 'hidden',
+    thickFrame: true,
     icon: __dirname + 'close-512.icns',
     
     webPreferences: {
