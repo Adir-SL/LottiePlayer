@@ -1,7 +1,7 @@
 {
-  "name": "Lottie Player",
-  "productName": "Lottie-player",
-  "description": "The best way to play Lottie animation files.",
+  "name": "lottie-player",
+  "productName": "lottie-player",
+  "description": "My Electron application description",
   "keywords": [],
   "main": "./main.js",
   "version": "1.0.0",

@@ -7,8 +7,7 @@ function createWindow () {
   const mainWindow = new BrowserWindow({
     width: 1024,
     height: 768,
-    thickFrame: true,
-    icon: __dirname + 'close-512.icns',
+    // thickFrame: true,
     
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
