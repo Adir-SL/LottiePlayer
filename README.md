@@ -7,8 +7,6 @@ This is a player for playing Lottie Animation files (.json files), these files a
 
 Lottie Player is an Electron-based desktop apps intended to run locally, it is free to use to all.
 
-<br/>
-
 Enjoy!
 
 <br/>
