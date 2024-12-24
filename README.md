@@ -3,6 +3,7 @@
 
 # Lottie Player
 
+This is a player for playing Lottie Animation files (.json files), these files are generally rendered from various services or  platforms like Adobe After Effects, Rive, LottieFiles and more.
 
 <br/>
 
