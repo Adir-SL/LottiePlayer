@@ -4,7 +4,7 @@
 <img src="images/lottieplayer-icon-min.png" alt="Lottie Player App Icon" width="120" align="left" />
 <br/>
 
-### Lottie Player
+<h1>Lottie Player</h1>
 
 <br/>
 
