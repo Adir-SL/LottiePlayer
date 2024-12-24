@@ -19,7 +19,8 @@ Enjoy!
  - Click an animation to Pause or Play it
  - Paying animations in Loop or Play Once
 
-![Lottie Player v1.0.0 Mac OS Screenshot](images/lottie-player_v1.0.0-min.png "Lottie Player v1.0.0 Mac OS Screenshot")
+![Lottie Player v1.0.0 Mac OS Screenshot](images/lottie-player_v1.0.0-min.png)
+Lottie Player v1.0.0 Mac OS Screenshot
 
 ## Releases
 
