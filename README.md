@@ -1,7 +1,7 @@
 # Lottie Player
 
 <!-- ![Lottie Player App Icon | 100]() -->
-<img src="images/lottieplayer-icon-min.png" alt="Lottie Player App Icon" width="100" align="left" />
+<img src="images/lottieplayer-icon-min.png" alt="Lottie Player App Icon" width="150" align="left" />
 <br/>
 
 ### Lottie Player
