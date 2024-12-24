@@ -5,6 +5,12 @@
 
 This is a player for playing Lottie Animation files (.json files), these files are generally rendered from various services or  platforms like Adobe After Effects, Rive, LottieFiles and more.
 
+Lottie Player is an Electron-based desktop apps intended to run locally, it is free to use to all.
+
+<br/>
+
+Enjoy!
+
 <br/>
 
 ## Features:
