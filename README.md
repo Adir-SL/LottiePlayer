@@ -1,1 +1,2 @@
-# lottie-player
+# Lottie Player
+
