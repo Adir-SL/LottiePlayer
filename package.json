@@ -1,6 +1,6 @@
 {
-  "name": "lottie-player",
-  "productName": "lottie-player",
+  "name": "LottiePlayer",
+  "productName": "LottiePlayer",
   "description": "My Electron application description",
   "keywords": [],
   "main": "./main.js",
