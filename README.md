@@ -28,7 +28,7 @@ Enjoy!
  - Download the latest release file
  - Extract the ZIP file
  - Copy the APP file to youe Application folder
- - Double click to open it
+ - Double click to open Lottie Player
 
 ## Releases
 
