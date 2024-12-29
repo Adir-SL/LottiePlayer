@@ -23,6 +23,13 @@ Enjoy!
 
 ![Lottie Player v1.0.0 Mac OS Screenshot](images/lottie-player_v1.0.0-min.png)
 
+## Installation:
+
+ - Download the latest release file
+ - Extract the ZIP file
+ - Copy the APP file to youe Application folder
+ - Double click to open it
+
 ## Releases
 
 Latest: [v1.0.0 for Mac OS](https://github.com/Adir-SL/LottiePlayer/releases/download/v1.0.0/Lottie-Player-mac_v1.0.0.zip)
