@@ -19,7 +19,7 @@ Enjoy!
  - Synchronizing two different animations
  - Play animations in Full Screen or Side by Side
  - Click an animation to Pause or Play it
- - Paying animations in Loop or Play Once
+ - Playing animations in Loop or Play Once
 
 ![Lottie Player v1.0.0 Mac OS Screenshot](images/lottie-player_v1.0.0-min.png)
 
