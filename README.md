@@ -29,6 +29,8 @@ Enjoy!
  - Extract the ZIP file
  - Copy the APP file to your Application folder
  - Double click to open Lottie Player
+ - If it does not open for security reasons, click Done
+ - Go to System Settings then click Privacy & Security, then click Open and Open Anyway.
 
 ## Releases
 
