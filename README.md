@@ -35,3 +35,9 @@ Enjoy!
 ## Releases
 
 Latest: [v1.0.1 for Mac OS](https://github.com/Adir-SL/LottiePlayer/releases/download/v1.0.0/Lottie-Player-mac_m1_v1.0.1.zip)
+
+## Roadmap
+
+Features to add:
+ - Select background color for animation and/ or show transparency.
+ - 
