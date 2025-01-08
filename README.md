@@ -39,5 +39,5 @@ Latest: [v1.0.1 for Mac OS](https://github.com/Adir-SL/LottiePlayer/releases/dow
 ## Roadmap
 
 Features to add:
- - Select background color for animation and/ or show transparency.
+ - Select background color for animation and/ or show transparency
  - Adding playback speed controls
