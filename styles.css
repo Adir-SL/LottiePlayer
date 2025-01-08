@@ -1,6 +1,6 @@
 /* *{border: 1px solid red;} */
 
-:root{
+:root {
     --bodyColor: #30323F;
     --textColor: #999999;
     --iconColor: #ACACAC;
@@ -16,7 +16,7 @@
     --buttonHover: #ffffff11;
 }
 
-body{
+body {
     background-color: var(--bodyColor);
     color: var(--textColor);
     display: flex;
@@ -29,17 +29,18 @@ body{
     padding: 0;
     margin: 0;
 }
+
 @media (prefers-color-scheme: dark) {
-    body{
+    body {
         border-color: transparent;
     }
 }
 
-#fileContent{
+#fileContent {
     display: none;
 }
 
-#lottie{
+#lottie {
     position: relative;
     display: flex;
     justify-content: center;
@@ -53,7 +54,7 @@ body{
     overflow: auto;
 }
 
-#lottie button{
+#lottie button {
     width: 45vw;
     height: 45vh;
     max-width: 45vw;
@@ -66,7 +67,7 @@ body{
     transition: none;
 }
 
-#lottie:has(button.bigger) button{
+#lottie:has(button.bigger) button {
     width: 0;
     height: 0;
     opacity: 0;
@@ -74,7 +75,7 @@ body{
     transition: all 150ms ease-in-out 150ms allow-discrete, opacity 150ms ease-in-out 0s allow-discrete;
 }
 
-#lottie:has(button.bigger) button.bigger{
+#lottie:has(button.bigger) button.bigger {
     width: calc(100% - 4px);
     height: calc(100% - 4px);
     max-width: calc(100% - 4px);
@@ -83,15 +84,17 @@ body{
     display: block;
 }
 
-#lottie button:focus-visible, #lottie button:focus-within, #lottie button:active{
+#lottie button:focus-visible,
+#lottie button:focus-within,
+#lottie button:active {
     box-shadow: 0 0 0 2px var(--activeColor) inset;
 }
 
-#lottie button:empty{
+#lottie button:empty {
     display: none;
 }
 
-.navbar{
+.navbar {
     position: absolute;
     top: 24px;
     left: 50vw;
@@ -106,28 +109,29 @@ body{
     z-index: 9;
 }
 
-.icon-button{
+.icon-button {
     position: relative;
     width: 32px;
     height: 32px;
     /* overflow: hidden; */
     border-radius: 4px;
 }
-.rotate-icon{
+
+.rotate-icon {
     transform: rotate(90deg);
 }
 
-.icon-button svg{
+.icon-button svg {
     padding: 4px;
 }
 
-.icon-button input{
+.icon-button input {
     font-size: 1.5em;
     opacity: 0;
     width: 100%;
 }
 
-.icon-button svg{
+.icon-button svg {
     position: absolute;
     top: 0;
     left: 0;
@@ -135,44 +139,53 @@ body{
     stroke: var(--iconColor);
     stroke-width: 1.5;
 }
-.icon-button:hover{
+
+.icon-button:hover {
     background-color: var(--buttonHover);
 }
-.icon-button:active{
+
+.icon-button:active {
     opacity: 0.8;
 }
 
-.navbar:has(#closeButton:hover) ~ #lottie .focused, .navbar:has(#fullScreenButton:hover) ~ #lottie .focused{
-  box-shadow: 0 0 0 2px var(--shadowStroke) inset, 0 0 0 2px var(--focusColor);
+.navbar:has(#closeButton:hover)~#lottie .focused,
+.navbar:has(#fullScreenButton:hover)~#lottie .focused {
+    box-shadow: 0 0 0 2px var(--shadowStroke) inset, 0 0 0 2px var(--focusColor);
 }
 
-#fullScreenButton #mini{
-    display: none;
-}
-#fullScreenButton #maxi{
-    display: block;
-}
-#fullScreenButton.minimize #mini{
-    display: block;
-}
-#fullScreenButton.minimize #maxi{
+#fullScreenButton #mini {
     display: none;
 }
 
-#loopButton #loop{
-    display: block;
-}
-#loopButton #once{
-    display: none;
-}
-#loopButton.playOnce #loop{
-    display: none;
-}
-#loopButton.playOnce #once{
+#fullScreenButton #maxi {
     display: block;
 }
 
-.divider{
+#fullScreenButton.minimize #mini {
+    display: block;
+}
+
+#fullScreenButton.minimize #maxi {
+    display: none;
+}
+
+#loopButton #loop {
+    display: block;
+}
+
+#loopButton #once {
+    display: none;
+}
+
+#loopButton.playOnce #loop {
+    display: none;
+}
+
+#loopButton.playOnce #once {
+    display: block;
+}
+
+.divider {
     height: 24px;
     width: 1.5px;
     transform: scale(1, 1.25);
@@ -180,11 +193,12 @@ body{
     opacity: .4;
 }
 
-*[tool-tip]{
+*[tool-tip] {
     position: relative;
 }
-*[tool-tip]::after{
-    content:attr(tool-tip);
+
+*[tool-tip]::after {
+    content: attr(tool-tip);
     position: absolute;
     padding: 8px;
     background-color: #000000;
@@ -200,29 +214,34 @@ body{
     /* display: none; */
     transition: all 100ms linear 0s allow-discrete;
 }
-*[tool-tip]:hover::after{
+
+*[tool-tip]:hover::after {
     opacity: 1;
     /* display: block; */
     transition: all 100ms linear 1000ms allow-discrete;
 }
 
 /* number of animations */
-body:has(button.active ~ button.active) #openButton{
+body:has(button.active ~ button.active) #openButton {
     opacity: 0.3;
     pointer-events: none;
 }
 
-body #closeButton, body #fullScreenButton, body #playAllButton{
+body #closeButton,
+body #fullScreenButton,
+body #playAllButton {
     opacity: 0.3;
     pointer-events: none;
 }
 
-body:has(button svg) #closeButton, body:has(button svg) #fullScreenButton, body:has(button svg) #playAllButton{
-  opacity: 1;
-  pointer-events: all;
+body:has(button svg) #closeButton,
+body:has(button svg) #fullScreenButton,
+body:has(button svg) #playAllButton {
+    opacity: 1;
+    pointer-events: all;
 }
 
-body::after{
+body::after {
     content: 'Open a compatible json file to get started.';
     position: absolute;
     top: 50%;
@@ -230,6 +249,7 @@ body::after{
     transform: translate(-50%, -50%);
     display: block;
 }
-body:has(button svg)::after{
+
+body:has(button svg)::after {
     display: none;
 }
