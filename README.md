@@ -42,3 +42,4 @@ Future features to add:
  - Select background color for animation and/ or show transparency
  - Adding playback speed controls
  - Show file names and/or file sizes
+ - Adding more view options
