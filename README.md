@@ -31,6 +31,7 @@ Enjoy!
  - Double click to open Lottie Player
  - If it does not open for security reasons, click "Done"
  - Go to "System Settings" then click "Privacy & Security", then click "Open" and "Open Anyway"
+ - For more info, see [Apple's official guide](https://github.com/Adir-SL/LottiePlayer/releases/download/v1.0.0/Lottie-Player-mac_m1_v1.0.1.zip)
 
 ## Releases
 
