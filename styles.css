@@ -193,7 +193,7 @@ body {
     box-shadow: 0 0 0 1px var(--iconColor);
 }
 
-#colorIndicator:focus-within::after {
+#colorIndicator:focus-within::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -201,9 +201,10 @@ body {
     top: 0;
     left: 0;
     background-color: inherit;
-    opacity: .5;
+    opacity: .8;
     transform: scale(2);
     border-radius: 99999px;
+    filter: blur(40px);
     pointer-events: none;
 }
 
