@@ -204,7 +204,7 @@ body {
     opacity: .8;
     transform: scale(2);
     border-radius: 99999px;
-    filter: blur(40px);
+    filter: blur(4px);
     pointer-events: none;
 }
 
