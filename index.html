@@ -76,7 +76,8 @@
 
     <div class="icon-button">
       <div id="colorIndicator">
-        <input type="color" value="#ff0000" />
+        <input type="color" value="#ff0000"
+          onchange="document.getElementById('colorIndicator').style.backgroundColor=this.value;" />
       </div>
     </div>
 
