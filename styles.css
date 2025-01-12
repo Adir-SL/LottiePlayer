@@ -183,6 +183,13 @@ body {
     display: block;
 }
 
+#colorIndicator{
+    width: 24px;
+    height: 24px;
+    border-radius: 99999px;
+    background-color: red;
+}
+
 .divider {
     height: 24px;
     width: 1.5px;
