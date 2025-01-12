@@ -184,12 +184,17 @@ body {
 }
 
 #colorIndicator{
+    position: relative;
     width: 20px;
     height: 20px;
     margin: 6px;
     border-radius: 99999px;
     background-color: #474956;
     box-shadow: 0 0 0 1px var(--iconColor);
+}
+
+#colorIndicator:focus-within::after{
+    content: '';
 }
 
 .divider {
