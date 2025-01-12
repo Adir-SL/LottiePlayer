@@ -203,6 +203,7 @@ body {
     background-color: inherit;
     opacity: .5;
     transform: scale(2);
+    border-radius: 99999px;
     pointer-events: none;
 }
 
