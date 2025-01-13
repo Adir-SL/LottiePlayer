@@ -141,6 +141,6 @@ function loopClick() {
 }
 
 function changeColor(e) {
-    // alert('yes')
-    document.getElementById('colorIndicator').style.backgroundColor = e.target.value;
+    document.querySelector(':root').style.setProperty('--buttonColor', 'lightblue');
+    // document.getElementById('colorIndicator').style.backgroundColor = e.target.value;
 }
