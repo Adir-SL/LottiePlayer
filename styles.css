@@ -74,10 +74,10 @@ body {
 }
 
 #lottie:has(button.bigger) button.bigger {
-    width: calc(100% - 4px);
-    height: calc(100% - 4px);
-    max-width: calc(100% - 4px);
-    max-height: calc(100% - 4px);
+    width: calc(100% - 24px);
+    height: calc(100% - 24px);
+    max-width: calc(100% - 24px);
+    max-height: calc(100% - 24px);
     opacity: 1;
     display: block;
 }
