@@ -55,73 +55,73 @@ function playPause() {
     focusHover();
 }
 
-function devTools(){
+function devTools() {
     mainWindow.webContents.openDevTools();
 }
 
-function focusHover(){
+function focusHover() {
     var x = document.getElementById("lottie").getElementsByTagName("button");
     var i;
     for (i = 0; i < x.length; i++) {
-        if(x[i].num == window.lastFocus.num){
+        if (x[i].num == window.lastFocus.num) {
             x[i].classList.add("focused");
-        }else{
+        } else {
             x[i].classList.remove("focused");
         }
     }
 }
 
-function closeClick(){
+function closeClick() {
     var x = document.getElementById("lottie").getElementsByTagName("button");
     var i;
     for (i = 0; i < x.length; i++) {
-        if(x[i].num == window.lastFocus.num){
+        if (x[i].num == window.lastFocus.num) {
             x[i].innerText = '';
             x[i].className = '';
         }
     }
     document.getElementById("fileInput").value = '';
-    if(window.fullScreened == 1){
+    if (window.fullScreened == 1) {
         fullScreenClick();
     }
     window.lastFocus = window.lastLastFocus;
 }
 
-function fullScreenClick(){
-  if(window.fullScreened !== 1){
-    var x = document.getElementById("lottie").getElementsByTagName("button");
-    var i;
-    for (i = 0; i < x.length; i++) {
-        if(x[i].num == window.lastFocus.num){
-            x[i].classList.add('bigger');
-        }else{
+function fullScreenClick() {
+    if (window.fullScreened !== 1) {
+        var x = document.getElementById("lottie").getElementsByTagName("button");
+        var i;
+        for (i = 0; i < x.length; i++) {
+            if (x[i].num == window.lastFocus.num) {
+                x[i].classList.add('bigger');
+            } else {
+                x[i].classList.remove('bigger');
+            }
+        }
+        window.fullScreened = 1;
+        document.getElementById("fullScreenButton").classList.add('minimize');
+    } else {
+        var x = document.getElementById("lottie").getElementsByTagName("button");
+        var i;
+        for (i = 0; i < x.length; i++) {
             x[i].classList.remove('bigger');
         }
+        window.fullScreened = 0;
+        document.getElementById("fullScreenButton").classList.remove('minimize');
     }
-    window.fullScreened = 1;
-    document.getElementById("fullScreenButton").classList.add('minimize');
-  }else{
-    var x = document.getElementById("lottie").getElementsByTagName("button");
-    var i;
-    for (i = 0; i < x.length; i++) {
-      x[i].classList.remove('bigger');
-    }
-    window.fullScreened = 0;
-    document.getElementById("fullScreenButton").classList.remove('minimize');
-  }
 }
 
-function playAll(){
+function playAll() {
     var x = document.getElementById("lottie").getElementsByTagName("button");
     var i;
     for (i = 0; i < x.length; i++) {
-      x[i].bodyAnim.goToAndPlay(0);
+        x[i].bodyAnim.goToAndPlay(0);
         x[i].paused = 0;
     }
 }
 
-function loopClick(){
-    if(window.loopAll == false){
+function loopClick() {
+    if (window.loopAll == false) {
         var x = document.getElementById("lottie").getElementsByTagName("button");
         var i;
         for (i = 0; i < x.length; i++) {
@@ -129,7 +129,7 @@ function loopClick(){
         }
         document.getElementById("loopButton").classList.remove("playOnce");
         window.loopAll = true;
-    }else{
+    } else {
         var x = document.getElementById("lottie").getElementsByTagName("button");
         var i;
         for (i = 0; i < x.length; i++) {
@@ -138,4 +138,9 @@ function loopClick(){
         document.getElementById("loopButton").classList.add("playOnce");
         window.loopAll = false;
     }
+}
+
+function changeColor(e) {
+    // alert('yes')
+    document.getElementById('colorIndicator').style.backgroundColor = e.target.value;
 }
