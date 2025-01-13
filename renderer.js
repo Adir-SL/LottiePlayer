@@ -142,5 +142,4 @@ function loopClick() {
 
 function changeColor(e) {
     document.querySelector(':root').style.setProperty('--buttonColor', e.target.value);
-    // document.getElementById('colorIndicator').style.backgroundColor = e.target.value;
 }
