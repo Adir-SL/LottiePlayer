@@ -230,7 +230,7 @@ body {
     padding: 8px;
     color: var(--textColor);
     background-color: var(--tooltipColor);
-    top: calc(-100%);
+    bottom: calc(-100%);
     left: 50%;
     transform: translateX(-50%);
     font-size: 12px;
