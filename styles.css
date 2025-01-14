@@ -1,6 +1,7 @@
 :root {
     --bodyColor: #30323F;
-    --textColor: #999999;
+    --textColor: #ffffff;
+    --phTextColor: #999999;
     --iconColor: #ACACAC;
 
     --navColor: #43465A;
@@ -18,7 +19,7 @@
 
 body {
     background-color: var(--bodyColor);
-    color: var(--textColor);
+    color: var(--phTextColor);
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -227,6 +228,7 @@ body {
     content: attr(tool-tip);
     position: absolute;
     padding: 8px;
+    color: var(--textColor);
     background-color: var(--tooltipColor);
     top: calc(-100%);
     left: 50%;
