@@ -12,6 +12,8 @@
 
     --buttonColor: #474956;
     --buttonHover: #ffffff11;
+
+    --tooltipColor : #000000;
 }
 
 body {
@@ -225,7 +227,7 @@ body {
     content: attr(tool-tip);
     position: absolute;
     padding: 8px;
-    background-color: #000000;
+    background-color: var(--tooltipColor);
     top: calc(-100%);
     left: 50%;
     transform: translateX(-50%);
