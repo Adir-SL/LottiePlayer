@@ -239,6 +239,7 @@ body {
     user-select: none;
     opacity: 0;
     border-radius: 8px;
+    box-shadow: 0 0 0 1px var(--strokeColor) inset;
     transition: all 100ms linear 0s allow-discrete;
 }
 
