@@ -239,13 +239,11 @@ body {
     user-select: none;
     opacity: 0;
     border-radius: 8px;
-    /* display: none; */
     transition: all 100ms linear 0s allow-discrete;
 }
 
 *[tool-tip]:hover::after {
     opacity: 1;
-    /* display: block; */
     transition: all 100ms linear 1000ms allow-discrete;
 }
 
