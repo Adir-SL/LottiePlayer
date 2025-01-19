@@ -1,4 +1,5 @@
 function init() {
+    window.animSpeed = 1;
     window.count = 0;
     document.getElementById('fileInput').addEventListener('change', handleFileSelect, false);
 }
