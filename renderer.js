@@ -144,3 +144,5 @@ function loopClick() {
 function changeColor(e) {
     document.querySelector(':root').style.setProperty('--buttonColor', e.target.value);
 }
+
+function changeSpped(){}
