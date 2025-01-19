@@ -148,6 +148,8 @@ function changeColor(e) {
 }
 
 function changeSpeed() {
+    // should toggle between 0.25, 0.5, 1, 1.5, 2, 4.
+    // Delete comments when done.
     window.animSpeed += 0.2;
     alert(window.animSpeed);
 }
