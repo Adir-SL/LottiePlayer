@@ -147,7 +147,7 @@ function changeColor(e) {
     document.querySelector(':root').style.setProperty('--buttonColor', e.target.value);
 }
 
-function changeSpped() {
+function changeSpeed() {
     window.animSpeed += 0.2;
     alert(window.animSpeed);
 }
