@@ -35,6 +35,7 @@ function loadAnim() {
         autoplay: true,
     });
     // document.getElementById('lottie').getElementsByTagName("button")[window.count].bodyAnim.setSpeed(0.1);
+    document.getElementById('lottie').getElementsByTagName("button")[window.count].bodyAnim.setSpeed(window.animSpeed);
 
     document.getElementById('lottie').getElementsByTagName('button')[window.count].addEventListener('click', playPause, false);
     window.count += 1;
@@ -148,4 +149,5 @@ function changeColor(e) {
 
 function changeSpped() {
     window.animSpeed += 0.2;
+    alert(window.animSpeed);
 }
