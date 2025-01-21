@@ -285,6 +285,6 @@ body:has(button svg)::after {
     display: none;
 }
 
-#speed_1 {
+.speed-icon.selected {
     display: block;
 }
