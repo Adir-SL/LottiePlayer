@@ -162,6 +162,7 @@ function changeSpeed() {
     }
 
     document.getElementById("speed_" + window.animSpeed).classList.add('selected');
+    animationSpeed();
 }
 
 function animationSpeed() {
