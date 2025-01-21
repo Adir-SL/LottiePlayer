@@ -14,7 +14,7 @@
     --buttonColor: #474956;
     --buttonHover: #ffffff11;
 
-    --tooltipColor : #000000;
+    --tooltipColor: #000000;
 }
 
 body {
@@ -279,4 +279,12 @@ body::after {
 
 body:has(button svg)::after {
     display: none;
+}
+
+.speed-icon {
+    display: none;
+}
+
+#speed_1 {
+    display: block;
 }
