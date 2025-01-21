@@ -155,5 +155,5 @@ function changeSpeed() {
     } else {
         window.animSpeed *= 2;
     }
-    
+    document.getElementById("speed_" + window.animSpeed).classList.add('selected');
 }
