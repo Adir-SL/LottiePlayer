@@ -151,9 +151,15 @@ function changeSpeed() {
     // should toggle between 0.25, 0.5, 1, 1.5, 2, 4.
     // Delete comments when done.
     if (window.animSpeed == 2) {
-        window.animSpeed = 0.25;
+        window.animSpeed = 0.5;
     } else {
         window.animSpeed *= 2;
     }
+    var x = document.getElementsByClassName("speed-icon");
+    var i;
+    for (i = 0; i < x.length; i++) {
+        x[i].classList.remove('selected');
+    }
+
     document.getElementById("speed_" + window.animSpeed).classList.add('selected');
 }
