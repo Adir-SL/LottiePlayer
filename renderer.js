@@ -165,5 +165,9 @@ function changeSpeed() {
 }
 
 function animationSpeed() {
-    document.getElementById('lottie').getElementsByTagName("button")[window.count].bodyAnim.setSpeed(window.animSpeed);
+    var x = document.getElementById('lottie').getElementsByTagName("button");
+    var i;
+    for (i = 0; i < x.length; i++) {
+        x[i].bodyAnim.setSpeed(window.animSpeed)
+    }
 }
