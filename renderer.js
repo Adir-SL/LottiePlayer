@@ -163,3 +163,7 @@ function changeSpeed() {
 
     document.getElementById("speed_" + window.animSpeed).classList.add('selected');
 }
+
+function animationSpeed() {
+    document.getElementById('lottie').getElementsByTagName("button")[window.count].bodyAnim.setSpeed(window.animSpeed);
+}
