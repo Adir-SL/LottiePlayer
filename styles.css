@@ -238,6 +238,7 @@ body {
     z-index: 9;
     user-select: none;
     opacity: 0;
+    visibility: hidden;
     border-radius: 8px;
     box-shadow: 0 0 0 1px var(--strokeColor) inset;
     transition: all 100ms linear 0s allow-discrete;
@@ -245,6 +246,7 @@ body {
 
 *[tool-tip]:hover::after {
     opacity: 1;
+    visibility: visible;
     transition: all 100ms linear 1000ms allow-discrete;
 }
 
