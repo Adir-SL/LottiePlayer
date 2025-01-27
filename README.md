@@ -47,6 +47,6 @@ v1.0.1: [v1.0.1 for Mac OS](https://github.com/Adir-SL/LottiePlayer/releases/dow
 
 Future features to add:
  - ~~Select background color for animations~~
- - Adding playback speed controls
+ - ~~Adding playback speed controls~~
  - Show file names and/ or file sizes
  - Adding more view options
