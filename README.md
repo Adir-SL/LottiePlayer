@@ -21,6 +21,8 @@ Enjoy!
  - Play animations in Full Screen or Side by Side
  - Click an animation to Pause or Play it
  - Playing animations in Loop or Play Once
+ - Changing playback speed to half, regular or double speed
+ - Selecting background color for animations
 
 ![Lottie Player v1.0.0 Mac OS Screenshot](images/lottie-player_v1.0.0-min.png)
 
