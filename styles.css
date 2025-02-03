@@ -68,6 +68,10 @@ body {
     transition: none;
 }
 
+button::before {
+    content: attr(filename);
+}
+
 #lottie:has(button.bigger) button {
     width: 0;
     height: 0;
