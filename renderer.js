@@ -15,7 +15,6 @@ function handleFileLoad(event) {
     document.getElementById('fileContent').textContent = event.target.result;
 
     loadAnim();
-
 }
 
 function loadAnim() {
