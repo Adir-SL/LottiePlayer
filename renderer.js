@@ -26,7 +26,6 @@ function loadAnim() {
 
     // document.getElementById('lottie').innerHTML = '';
 
-    // console.log(document.getElementById('fileInput').files[0].name);
     document.getElementById('lottie').getElementsByTagName("button")[window.count].setAttribute('filename', document.getElementById('fileInput').files[0].name);
 
     const animationData = JSON.parse(document.getElementById('fileContent').textContent);
