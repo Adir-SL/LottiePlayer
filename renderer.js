@@ -25,7 +25,7 @@ function loadAnim() {
     document.getElementById('lottie').append(button);
 
     // document.getElementById('lottie').innerHTML = '';
-    console.log('______________________');
+    
     console.log(document.getElementById('fileInput').files[0].name);
     const animationData = JSON.parse(document.getElementById('fileContent').textContent);
     document.getElementById('lottie').getElementsByTagName("button")[window.count].bodyAnim = bodymovin.loadAnimation({
