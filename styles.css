@@ -10,6 +10,7 @@
     --focusColor: #828cffc5;
     --activeColor: #828cffc5;
     --shadowStroke: #ffffff33;
+    --shadowStroke: #71727b;
 
     --buttonColor: #474956;
     --buttonHover: #ffffff11;
@@ -62,7 +63,7 @@ body {
     max-width: 45vw;
     max-height: 45vh;
     background-color: var(--buttonColor);
-    border-radius: 4px;
+    border-radius: 0 8px 8px 8px;
     box-shadow: 0 0 0 2px var(--shadowStroke) inset;
     outline: none;
     border: none;
@@ -72,12 +73,12 @@ body {
 #lottie button::before {
     content: attr(filename);
     position: absolute;
-    
     padding: 8px 16px;
     top: 0;
     left: 0;
     transform: translateY(-100%);
-    background-color: #ffffff11;
+    background-color: var(--shadowStroke);
+    border-radius: 8px 8px 0 0;
 }
 
 #lottie:has(button.bigger) button {
