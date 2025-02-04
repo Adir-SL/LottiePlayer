@@ -69,7 +69,11 @@ body {
 }
 
 #lottie button::before {
-    /* content: attr(filename); */
+    content: attr(filename);
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    padding: 0 20px;
 }
 
 #lottie:has(button.bigger) button {
