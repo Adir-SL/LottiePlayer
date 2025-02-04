@@ -74,6 +74,9 @@ body {
     width: 100%;
     height: fit-content;
     padding: 0 20px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff11;
 }
 
 #lottie:has(button.bigger) button {
