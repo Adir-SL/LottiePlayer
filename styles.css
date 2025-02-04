@@ -79,6 +79,7 @@ body {
     transform: translateY(-100%);
     background-color: var(--shadowStroke);
     border-radius: 8px 8px 0 0;
+    color: var(--textColor);
 }
 
 #lottie:has(button.bigger) button {
