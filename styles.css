@@ -82,6 +82,12 @@ body {
     color: var(--textColor);
 }
 
+#lottie button:focus-visible::before,
+#lottie button:focus-within::before,
+#lottie button:active::before {
+    background-color: var(--focusColor);
+}
+
 #lottie:has(button.bigger) button {
     width: 0;
     height: 0;
