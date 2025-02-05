@@ -28,7 +28,7 @@ function loadAnim() {
 
     document.getElementById('lottie').getElementsByTagName("button")[window.count].setAttribute('filename', document.getElementById('fileInput').files[0].name);
     document.getElementById('lottie').getElementsByTagName("button")[window.count].setAttribute('filesize', document.getElementById('fileInput').files[0].size);
-    document.getElementById('lottie').getElementsByTagName("button")[window.count].setAttribute('playing', "I>");
+    document.getElementById('lottie').getElementsByTagName("button")[window.count].setAttribute('playing', ">>");
 
     const animationData = JSON.parse(document.getElementById('fileContent').textContent);
     document.getElementById('lottie').getElementsByTagName("button")[window.count].bodyAnim = bodymovin.loadAnimation({
@@ -55,9 +55,11 @@ function playPause() {
     if (document.activeElement.paused !== 1) {
         document.activeElement.bodyAnim.pause();
         document.activeElement.paused = 1;
+        document.activeElement.setAttribute('playing', "");
     } else {
         document.activeElement.bodyAnim.play();
         document.activeElement.paused = 0;
+        document.activeElement.setAttribute('playing', '>>');
     }
     focusHover();
 }
