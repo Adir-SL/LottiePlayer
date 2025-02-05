@@ -28,6 +28,7 @@ function loadAnim() {
 
     document.getElementById('lottie').getElementsByTagName("button")[window.count].setAttribute('filename', document.getElementById('fileInput').files[0].name);
     document.getElementById('lottie').getElementsByTagName("button")[window.count].setAttribute('filesize', document.getElementById('fileInput').files[0].size);
+    document.getElementById('lottie').getElementsByTagName("button")[window.count].setAttribute('playing', "I>");
 
     const animationData = JSON.parse(document.getElementById('fileContent').textContent);
     document.getElementById('lottie').getElementsByTagName("button")[window.count].bodyAnim = bodymovin.loadAnimation({
