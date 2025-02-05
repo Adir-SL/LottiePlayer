@@ -176,8 +176,9 @@ body {
 
 .navbar:has(#closeButton:hover)~#lottie .focused::before,
 .navbar:has(#fullScreenButton:hover)~#lottie .focused::before {
-    border:2px solid var(--focusColor);
-    border-bottom: none;
+    /* border:2px solid var(--focusColor);
+    border-bottom: none; */
+    box-shadow: 2px 0 0 0 var(--focusColor), -2px 0 0 0 var(--focusColor), 0 -2px 0 0 var(--focusColor);
 }
 
 #fullScreenButton #mini {
