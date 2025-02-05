@@ -174,6 +174,12 @@ body {
     box-shadow: 0 0 0 2px var(--shadowStroke) inset, 0 0 0 2px var(--focusColor);
 }
 
+.navbar:has(#closeButton:hover)~#lottie .focused::before,
+.navbar:has(#fullScreenButton:hover)~#lottie .focused::before {
+    border:2px solid var(--focusColor);
+    border-bottom: none;
+}
+
 #fullScreenButton #mini {
     display: none;
 }
