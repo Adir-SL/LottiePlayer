@@ -38,7 +38,7 @@ function loadAnim() {
         loop: window.loopAll,
         autoplay: true,
     });
-    // document.getElementById('lottie').getElementsByTagName("button")[window.count].bodyAnim.setSpeed(0.1);
+    
     document.getElementById('lottie').getElementsByTagName("button")[window.count].bodyAnim.setSpeed(window.animSpeed);
 
     document.getElementById('lottie').getElementsByTagName('button')[window.count].addEventListener('click', playPause, false);
