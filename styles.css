@@ -73,6 +73,7 @@ body {
 
 #lottie button::before {
     content: attr(filename);
+    /* content: attr(filename) ' ' attr(filesize); */
     position: absolute;
     padding: 8px 16px;
     top: 0;
