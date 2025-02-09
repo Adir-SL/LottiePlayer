@@ -27,7 +27,12 @@ function loadAnim() {
     // document.getElementById('lottie').innerHTML = '';
 
     document.getElementById('lottie').getElementsByTagName("button")[window.count].setAttribute('filename', document.getElementById('fileInput').files[0].name);
-    document.getElementById('lottie').getElementsByTagName("button")[window.count].setAttribute('filesize', Math.round((document.getElementById('fileInput').files[0].size) / 1000));
+    if(Math.round((document.getElementById('fileInput').files[0].size) / 1000) < 1001){
+        document.getElementById('lottie').getElementsByTagName("button")[window.count].setAttribute('filesize', Math.round((document.getElementById('fileInput').files[0].size) / 1000));
+    }else{
+        document.getElementById('lottie').getElementsByTagName("button")[window.count].setAttribute('filesize', Math.round((document.getElementById('fileInput').files[0].size) / 1000000));
+    }
+    
     document.getElementById('lottie').getElementsByTagName("button")[window.count].setAttribute('playing', ">>");
 
     const animationData = JSON.parse(document.getElementById('fileContent').textContent);
