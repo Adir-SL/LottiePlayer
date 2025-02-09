@@ -27,12 +27,12 @@ function loadAnim() {
     // document.getElementById('lottie').innerHTML = '';
 
     document.getElementById('lottie').getElementsByTagName("button")[window.count].setAttribute('filename', document.getElementById('fileInput').files[0].name);
-    if(Math.round((document.getElementById('fileInput').files[0].size) / 1000) < 1001){
-        document.getElementById('lottie').getElementsByTagName("button")[window.count].setAttribute('filesize', Math.round((document.getElementById('fileInput').files[0].size) / 1000)+'KB');
-    }else{
-        document.getElementById('lottie').getElementsByTagName("button")[window.count].setAttribute('filesize', Math.round((document.getElementById('fileInput').files[0].size) / 1000000)+'MB');
+    if (Math.round((document.getElementById('fileInput').files[0].size) / 1000) < 1001) {
+        document.getElementById('lottie').getElementsByTagName("button")[window.count].setAttribute('filesize', Math.round((document.getElementById('fileInput').files[0].size) / 100) / 10 + 'KB');
+    } else {
+        document.getElementById('lottie').getElementsByTagName("button")[window.count].setAttribute('filesize', Math.round((document.getElementById('fileInput').files[0].size) / 100000) / 10 + 'MB');
     }
-    
+
     document.getElementById('lottie').getElementsByTagName("button")[window.count].setAttribute('playing', ">>");
 
     const animationData = JSON.parse(document.getElementById('fileContent').textContent);
