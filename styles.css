@@ -81,6 +81,7 @@ body {
     background-color: var(--shadowStroke);
     border-radius: 8px 8px 0 0;
     color: var(--textColor);
+    max-width: 90%;
 }
 #lottie button[playing='false']::before{
     content: attr(filename) ' (' attr(filesize) ')';
