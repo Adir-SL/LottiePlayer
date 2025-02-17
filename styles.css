@@ -82,8 +82,8 @@ body {
     border-radius: 8px 8px 0 0;
     color: var(--textColor);
 }
-#lottie button[playing]::before{
-    content: attr(filename) ' ' attr(playing) ' (' attr(filesize) ')';
+#lottie button[playing='']::before{
+    content: attr(filename) ' +(' attr(filesize) ')';
 }
 
 #lottie button:focus-visible::before,
