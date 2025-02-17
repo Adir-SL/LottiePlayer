@@ -83,6 +83,9 @@ body {
     color: var(--textColor);
     max-width: 90%;
     height: 1rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 #lottie button[playing='false']::before{
     content: attr(filename) ' (' attr(filesize) ')';
