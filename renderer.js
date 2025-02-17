@@ -60,7 +60,7 @@ function playPause() {
     if (document.activeElement.paused !== 1) {
         document.activeElement.bodyAnim.pause();
         document.activeElement.paused = 1;
-        document.activeElement.setAttribute('playing', "");
+        document.activeElement.setAttribute('playing', "false");
     } else {
         document.activeElement.bodyAnim.play();
         document.activeElement.paused = 0;
