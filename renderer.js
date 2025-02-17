@@ -33,7 +33,7 @@ function loadAnim() {
         document.getElementById('lottie').getElementsByTagName("button")[window.count].setAttribute('filesize', Math.round((document.getElementById('fileInput').files[0].size) / 100000) / 10 + 'MB');
     }
 
-    document.getElementById('lottie').getElementsByTagName("button")[window.count].setAttribute('playing', ">>");
+    document.getElementById('lottie').getElementsByTagName("button")[window.count].setAttribute('playing', "true");
 
     const animationData = JSON.parse(document.getElementById('fileContent').textContent);
     document.getElementById('lottie').getElementsByTagName("button")[window.count].bodyAnim = bodymovin.loadAnimation({
@@ -60,11 +60,11 @@ function playPause() {
     if (document.activeElement.paused !== 1) {
         document.activeElement.bodyAnim.pause();
         document.activeElement.paused = 1;
-        document.activeElement.setAttribute('playing', "");
+        document.activeElement.setAttribute('playing', "false");
     } else {
         document.activeElement.bodyAnim.play();
         document.activeElement.paused = 0;
-        document.activeElement.setAttribute('playing', '>>');
+        document.activeElement.setAttribute('playing', 'true');
     }
     focusHover();
 }
