@@ -38,9 +38,7 @@ Enjoy!
 
 ## Releases
 
-Latest: [v1.0.3 for Mac OS](https://github.com/Adir-SL/LottiePlayer/releases/download/v1.0.3/Lottie-Player-mac_m1_v1.0.3.zip)
-
-v1.0.1: [v1.0.1 for Mac OS](https://github.com/Adir-SL/LottiePlayer/releases/download/v1.0.0/Lottie-Player-mac_m1_v1.0.1.zip)
+Latest: [v1.0.3 for Mac OS](https://github.com/Adir-SL/LottiePlayer/releases/download/v1.0.3/LottiePlayer-darwin-arm64-1.0.3.zip)
 
 
 ##
