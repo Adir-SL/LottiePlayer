@@ -50,4 +50,4 @@ Future features to add:
  - ~~Adding playback speed controls~~
  - ~~Show file names and/ or file sizes~~
  - Adding more view options
- - Making a Windows version
+ - Making version for Microsoft Windows
