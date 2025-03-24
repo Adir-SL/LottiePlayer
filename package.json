@@ -4,7 +4,8 @@
   "description": "My Electron application description",
   "keywords": [],
   "main": "./main.js",
-  "version": "1.0.0",
+  "version": "1.0.3",
+  "icon": "favicon.ico",
   "author": "adirsl",
   "scripts": {
     "start": "electron-forge start",
