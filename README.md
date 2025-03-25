@@ -49,4 +49,4 @@ Future features to add:
  - ~~Select background color for animations~~
  - ~~Adding playback speed controls~~
  - ~~Show file names and/ or file sizes~~
- - ~~Making version for Microsoft Windows~~
+ - ~~Making a version for Microsoft Windows~~
