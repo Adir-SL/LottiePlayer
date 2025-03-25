@@ -38,7 +38,7 @@ Enjoy!
 
 ## Releases
 
-Latest: [v1.0.3 for Mac OS (Apple silicon)](https://github.com/Adir-SL/LottiePlayer/releases/download/v1.0.3/LottiePlayer-darwin-arm64-1.0.3.zip)
+Latest: [v1.0.3 for Mac OS (Apple silicon)](https://github.com/Adir-SL/LottiePlayer/releases/download/v1.0.3/LottiePlayer-1.0.3-Apple-Silicon.zip)
 
 
 ##
