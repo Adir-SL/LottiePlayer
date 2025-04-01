@@ -51,4 +51,4 @@ Future features to add:
  - ~~Show file names and/ or file sizes~~
  - ~~Making a version for Microsoft Windows~~
  - Animated SVG support
- - .lottie file support
+ - More file support (including .lottie)
