@@ -50,3 +50,4 @@ Future features to add:
  - ~~Adding playback speed controls~~
  - ~~Show file names and/ or file sizes~~
  - ~~Making a version for Microsoft Windows~~
+ - Animated SVG support
