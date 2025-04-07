@@ -45,14 +45,17 @@ Latest:
 [v1.0.3 for Windows (7 or later)](https://github.com/Adir-SL/LottiePlayer/releases/download/v1.0.3/LottiePlayer-1.0.3-WIN-Setup.exe)
 
 
-##
 
 ## Roadmap
 
 Future features to add:
+
+### For the next .x.1 release:
  - ~~Select background color for animations~~
  - ~~Adding playback speed controls~~
  - ~~Show file names and/ or file sizes~~
  - ~~Making a version for Microsoft Windows~~
+
+ ### For the next .1 release:
  - Animated SVG support
  - More file support (including .lottie)
