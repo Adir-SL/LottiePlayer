@@ -44,7 +44,7 @@ Latest:
 
 [v1.0.3 for Windows (7 or later)](https://github.com/Adir-SL/LottiePlayer/releases/download/v1.0.3/LottiePlayer-1.0.3-WIN-Setup.exe)
 
-
+---
 
 ## Roadmap
 
