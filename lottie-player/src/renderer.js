@@ -54,17 +54,18 @@ function loadAnim() {
     focusHover();
 }
 
-function playPause() {
+function playPause(event) {
     window.lastLastFocus = window.lastFocus
-    window.lastFocus = document.activeElement;
+    window.lastFocus = event.target.parentElement;
+    console.log(window.lastFocus);
     if (window.lastFocus.paused !== 1) {
         window.lastFocus.bodyAnim.pause();
         window.lastFocus.paused = 1;
-        document.activeElement.setAttribute('playing', "false");
+        window.lastFocus.setAttribute('playing', "false");
     } else {
-        document.activeElement.bodyAnim.play();
-        document.activeElement.paused = 0;
-        document.activeElement.setAttribute('playing', 'true');
+        window.lastFocus.bodyAnim.play();
+        window.lastFocus.paused = 0;
+        window.lastFocus.setAttribute('playing', 'true');
     }
     focusHover();
 }
