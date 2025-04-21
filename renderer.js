@@ -57,9 +57,9 @@ function loadAnim() {
 function playPause() {
     window.lastLastFocus = window.lastFocus
     window.lastFocus = document.activeElement;
-    if (document.activeElement.paused !== 1) {
-        document.activeElement.bodyAnim.pause();
-        document.activeElement.paused = 1;
+    if (window.lastFocus.paused !== 1) {
+        window.lastFocus.bodyAnim.pause();
+        window.lastFocus.paused = 1;
         document.activeElement.setAttribute('playing', "false");
     } else {
         document.activeElement.bodyAnim.play();
