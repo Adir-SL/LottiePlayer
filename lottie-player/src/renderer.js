@@ -56,7 +56,7 @@ function loadAnim() {
 
 function playPause(event) {
     window.lastLastFocus = window.lastFocus
-    window.lastFocus = event.target.parentElement;
+    window.lastFocus = event.target;
     console.log(window.lastFocus);
     if (window.lastFocus.paused !== 1) {
         window.lastFocus.bodyAnim.pause();
