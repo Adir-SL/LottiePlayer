@@ -1,326 +1,327 @@
 :root {
-    --bodyColor: #30323F;
-    --textColor: #ffffff;
-    --phTextColor: #999999;
-    --iconColor: #ACACAC;
-
-    --navColor: #43465A;
-    --strokeColor: #585A6A;
-
-    --focusColor: #828cffc5;
-    --focusColor: #747ad9;
-    --activeColor: #828cffc5;
-    --shadowStroke: #ffffff33;
-    --shadowStroke: #71727b;
-
-    --buttonColor: #474956;
-    --buttonHover: #ffffff11;
-
-    --tooltipColor: #000000;
+  --bodyColor: #30323F;
+  --textColor: #ffffff;
+  --phTextColor: #999999;
+  --iconColor: #ACACAC;
+  --navColor: #43465A;
+  --strokeColor: #585A6A;
+  --focusColor: #828cffc5;
+  --focusColor: #747ad9;
+  --activeColor: #828cffc5;
+  --shadowStroke: #ffffff33;
+  --shadowStroke: #71727b;
+  --buttonColor: #474956;
+  --buttonHover: #ffffff11;
+  --tooltipColor: #000000;
 }
 
 body {
-    background-color: var(--bodyColor);
-    color: var(--phTextColor);
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    inset: 0;
-    font-family: sans-serif;
-    border: 1px solid var(--iconColor);
-    border-radius: 0 0 10px 10px;
-    padding: 0;
-    margin: 0;
+  background-color: var(--bodyColor);
+  color: var(--phTextColor);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  inset: 0;
+  font-family: sans-serif;
+  border: 1px solid var(--iconColor);
+  border-radius: 0 0 10px 10px;
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-        border-color: transparent;
-    }
+@media (prefers-color-scheme:dark) {
+  body {
+    border-color: transparent;
+  }
 }
 
 #fileContent {
-    display: none;
+  display: none;
 }
 
 #lottie {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 16px;
-    width: 100%;
-    height: 100%;
-    padding-top: 96px;
-    overflow: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 100%;
+  height: 100%;
+  padding-top: 96px;
+  overflow: auto;
 }
 
 #lottie button {
-    position: relative;
-    width: 45vw;
-    height: 45vh;
-    max-width: 45vw;
-    max-height: 45vh;
-    background-color: var(--buttonColor);
-    border-radius: 0 8px 8px 8px;
-    box-shadow: 0 0 0 2px var(--shadowStroke) inset;
-    outline: none;
-    border: none;
-    transition: none;
+  position: relative;
+  width: 45vw;
+  height: 45vh;
+  max-width: 45vw;
+  max-height: 45vh;
+  background-color: var(--buttonColor);
+  border-radius: 0 8px 8px 8px;
+  box-shadow: 0 0 0 2px var(--shadowStroke) inset;
+  outline: none;
+  border: none;
+  transition: none;
+}
+
+#lottie button svg {
+  pointer-events: none;
 }
 
 #lottie button::before {
-    content: attr(filename) ' \25BA  (' attr(filesize) ')';
-    position: absolute;
-    padding: 8px 16px;
-    top: 0;
-    left: 0;
-    transform: translateY(-100%);
-    background-color: var(--shadowStroke);
-    border-radius: 8px 8px 0 0;
-    color: var(--textColor);
-    max-width: 90%;
-    height: 1rem;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
+  content: attr(filename) ' \25BA  (' attr(filesize) ')';
+  position: absolute;
+  padding: 8px 16px;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  background-color: var(--shadowStroke);
+  border-radius: 8px 8px 0 0;
+  color: var(--textColor);
+  max-width: 90%;
+  height: 1rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
-#lottie button[playing='false']::before{
-    content: attr(filename) ' (' attr(filesize) ')';
+
+#lottie button[playing='false']::before {
+  content: attr(filename) ' (' attr(filesize) ')';
 }
 
 #lottie button:focus-visible::before,
-#lottie button:focus-within::before,
-#lottie button:active::before {
-    background-color: var(--activeColor);
+  #lottie button:focus-within::before,
+  #lottie button:active::before {
+  background-color: var(--activeColor);
 }
 
 #lottie:has(button.bigger) button {
-    width: 0;
-    height: 0;
-    opacity: 0;
-    display: none;
-    transition: all 150ms ease-in-out 150ms allow-discrete, opacity 150ms ease-in-out 0s allow-discrete;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  display: none;
+  transition: all 150ms ease-in-out 150ms allow-discrete, opacity 150ms ease-in-out 0s allow-discrete;
 }
 
 #lottie:has(button.bigger) button.bigger {
-    width: calc(100% - 24px);
-    height: calc(100% - 24px);
-    max-width: calc(100% - 24px);
-    max-height: calc(100% - 24px);
-    opacity: 1;
-    display: block;
+  width: calc(100% - 24px);
+  height: calc(100% - 24px);
+  max-width: calc(100% - 24px);
+  max-height: calc(100% - 24px);
+  opacity: 1;
+  display: block;
 }
 
 #lottie button:focus-visible,
-#lottie button:focus-within,
-#lottie button:active {
-    box-shadow: 0 0 0 2px var(--activeColor) inset;
+  #lottie button:focus-within,
+  #lottie button:active {
+  box-shadow: 0 0 0 2px var(--activeColor) inset;
 }
 
 #lottie button:empty {
-    display: none;
+  display: none;
 }
 
 .navbar {
-    position: absolute;
-    top: 24px;
-    left: 50vw;
-    transform: translate(-50%, 0);
-    background-color: var(--navColor);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px;
-    border-radius: 12px;
-    border: 1px solid var(--strokeColor);
-    z-index: 9;
+  position: absolute;
+  top: 24px;
+  left: 50vw;
+  transform: translate(-50%, 0);
+  background-color: var(--navColor);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border-radius: 12px;
+  border: 1px solid var(--strokeColor);
+  z-index: 9;
 }
 
 .icon-button {
-    position: relative;
-    width: 32px;
-    height: 32px;
-    /* overflow: hidden; */
-    border-radius: 4px;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  /* overflow: hidden; */
+  border-radius: 4px;
 }
 
 .rotate-icon {
-    transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .icon-button svg {
-    padding: 4px;
+  padding: 4px;
 }
 
 .icon-button input {
-    font-size: 1.5em;
-    opacity: 0;
-    width: 100%;
+  font-size: 1.5em;
+  opacity: 0;
+  width: 100%;
 }
 
 .icon-button svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    stroke: var(--iconColor);
-    stroke-width: 1.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  stroke: var(--iconColor);
+  stroke-width: 1.5;
 }
 
 .icon-button:hover {
-    background-color: var(--buttonHover);
+  background-color: var(--buttonHover);
 }
 
 .icon-button:active {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
-.navbar:has(#closeButton:hover)~#lottie .focused,
-.navbar:has(#fullScreenButton:hover)~#lottie .focused {
-    box-shadow: 0 0 0 2px var(--shadowStroke) inset, 0 0 0 2px var(--focusColor);
+.navbar:has(#closeButton:hover) ~ #lottie .focused,
+  .navbar:has(#fullScreenButton:hover) ~ #lottie .focused {
+  box-shadow: 0 0 0 2px var(--shadowStroke) inset, 0 0 0 2px var(--focusColor);
 }
 
-.navbar:has(#closeButton:hover)~#lottie .focused::before,
-.navbar:has(#fullScreenButton:hover)~#lottie .focused::before {
-    box-shadow: 2px 0 0 0 var(--focusColor), -2px 0 0 0 var(--focusColor), 0 -2px 0 0 var(--focusColor);
+.navbar:has(#closeButton:hover) ~ #lottie .focused::before,
+  .navbar:has(#fullScreenButton:hover)~#lottie .focused::before {
+  box-shadow: 2px 0 0 0 var(--focusColor), -2px 0 0 0 var(--focusColor), 0 -2px 0 0 var(--focusColor);
 }
 
 #fullScreenButton #mini {
-    display: none;
+  display: none;
 }
 
 #fullScreenButton #maxi {
-    display: block;
+  display: block;
 }
 
 #fullScreenButton.minimize #mini {
-    display: block;
+  display: block;
 }
 
 #fullScreenButton.minimize #maxi {
-    display: none;
+  display: none;
 }
 
 #loopButton #loop {
-    display: block;
+  display: block;
 }
 
 #loopButton #once {
-    display: none;
+  display: none;
 }
 
 #loopButton.playOnce #loop {
-    display: none;
+  display: none;
 }
 
 #loopButton.playOnce #once {
-    display: block;
+  display: block;
 }
 
 #colorIndicator {
-    position: relative;
-    width: 20px;
-    height: 20px;
-    margin: 6px;
-    border-radius: 99999px;
-    background-color: var(--buttonColor);
-    box-shadow: 0 0 0 1px var(--iconColor);
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: 6px;
+  border-radius: 99999px;
+  background-color: var(--buttonColor);
+  box-shadow: 0 0 0 1px var(--iconColor);
 }
 
 #colorIndicator:focus-within::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: inherit;
-    opacity: .8;
-    transform: scale(2);
-    border-radius: 99999px;
-    filter: blur(4px);
-    z-index: -1;
-    pointer-events: none;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: inherit;
+  opacity: .8;
+  transform: scale(2);
+  border-radius: 99999px;
+  filter: blur(4px);
+  z-index: -1;
+  pointer-events: none;
 }
 
 .divider {
-    height: 24px;
-    width: 1.5px;
-    transform: scale(1, 1.25);
-    background-color: var(--iconColor);
-    opacity: .4;
+  height: 24px;
+  width: 1.5px;
+  transform: scale(1, 1.25);
+  background-color: var(--iconColor);
+  opacity: .4;
 }
 
 *[tool-tip] {
-    position: relative;
+  position: relative;
 }
 
 *[tool-tip]::after {
-    content: attr(tool-tip);
-    position: absolute;
-    padding: 8px;
-    color: var(--textColor);
-    background-color: var(--tooltipColor);
-    bottom: calc(-100%);
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 12px;
-    white-space: nowrap;
-    z-index: 9;
-    user-select: none;
-    opacity: 0;
-    visibility: hidden;
-    border-radius: 8px;
-    box-shadow: 0 0 0 1px var(--strokeColor) inset;
-    transition: all 100ms linear 0s allow-discrete;
+  content: attr(tool-tip);
+  position: absolute;
+  padding: 8px;
+  color: var(--textColor);
+  background-color: var(--tooltipColor);
+  bottom: calc(-100%);
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 9;
+  user-select: none;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px var(--strokeColor) inset;
+  transition: all 100ms linear 0s allow-discrete;
 }
 
 *[tool-tip]:hover::after {
-    opacity: 1;
-    visibility: visible;
-    transition: all 100ms linear 1000ms allow-discrete;
+  opacity: 1;
+  visibility: visible;
+  transition: all 100ms linear 1000ms allow-discrete;
 }
 
 /* number of animations */
 body:has(button.active ~ button.active) #openButton {
-    opacity: 0.3;
-    pointer-events: none;
+  opacity: 0.3;
+  pointer-events: none;
 }
 
 body #closeButton,
 body #fullScreenButton,
 body #playAllButton {
-    opacity: 0.3;
-    pointer-events: none;
+  opacity: 0.3;
+  pointer-events: none;
 }
 
 body:has(button svg) #closeButton,
-body:has(button svg) #fullScreenButton,
-body:has(button svg) #playAllButton {
-    opacity: 1;
-    pointer-events: all;
+  body:has(button svg) #fullScreenButton,
+  body:has(button svg) #playAllButton {
+  opacity: 1;
+  pointer-events: all;
 }
 
 body::after {
-    content: 'Open a compatible json file to get started.';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: block;
+  content: 'Open a compatible json file to get started.';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
 }
 
 body:has(button svg)::after {
-    display: none;
+  display: none;
 }
 
 .speed-icon {
-    display: none;
+  display: none;
 }
 
 .speed-icon.selected {
-    display: block;
+  display: block;
 }
