@@ -442,9 +442,9 @@ function searchForCode(){
 }
 window.checkTime = new Date().valueOf();
 
-window.onload = function() {
-    updateCodeInElements();
-    addConsole();
-    console.log('Hello World!');
-    document.getElementById("vConsoleElements_"+window.checkTime).innerText = window.origCodeAtLoad;
-  }
+// window.onload = function() {
+//     updateCodeInElements();
+//     addConsole();
+//     console.log('Hello World!');
+//     document.getElementById("vConsoleElements_"+window.checkTime).innerText = window.origCodeAtLoad;
+//   }

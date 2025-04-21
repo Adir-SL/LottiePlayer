@@ -11,7 +11,7 @@ function handleFileSelect(event) {
 }
 
 function handleFileLoad(event) {
-    console.log(event);
+    // console.log(event);
     document.getElementById('fileContent').textContent = event.target.result;
 
     loadAnim();
@@ -55,6 +55,7 @@ function loadAnim() {
 }
 
 function playPause() {
+    // console.log('play pause')
     window.lastLastFocus = window.lastFocus
     window.lastFocus = document.activeElement;
     if (document.activeElement.paused !== 1) {
