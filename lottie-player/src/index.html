@@ -1,39 +1,98 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tauri App</title>
-    <script type="module" src="/main.js" defer></script>
-  </head>
+<!DOCTYPE html>
+<html>
 
-  <body>
-    <main class="container">
-      <h1>Welcome to Tauri</h1>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <title>Lottie Player v1.0.3</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+  <script src="renderer.js"></script>
+</head>
 
-      <div class="row">
-        <a href="https://tauri.app" target="_blank">
-          <img src="/assets/tauri.svg" class="logo tauri" alt="Tauri logo" />
-        </a>
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-          target="_blank"
-        >
-          <img
-            src="/assets/javascript.svg"
-            class="logo vanilla"
-            alt="JavaScript logo"
-          />
-        </a>
+<body onload="init()">
+  <div class="navbar">
+    <div class="icon-button" id="openButton" tool-tip="Open a compatible json file">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="icon icon-tabler icons-tabler-outline icon-tabler-folder-open">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path
+          d="M5 19l2.757 -7.351a1 1 0 0 1 .936 -.649h12.307a1 1 0 0 1 .986 1.164l-.996 5.211a2 2 0 0 1 -1.964 1.625h-14.026a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v2" />
+      </svg>
+      <input id="fileInput" type="file" name="file" title="" accept=".json" />
+    </div>
+    <div class="icon-button" id="closeButton" tool-tip="Close current file" onclick="closeClick();">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="icon icon-tabler icons-tabler-outline icon-tabler-square-letter-x">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
+        <path d="M10 8l4 8" />
+        <path d="M10 16l4 -8" />
+      </svg>
+    </div>
+    <div class="divider"></div>
+    <div class="icon-button" id="fullScreenButton" tool-tip="Change current view" onclick="fullScreenClick();">
+      <svg id="maxi" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="icon icon-tabler icons-tabler-outline icon-tabler-maximize">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M4 8v-2a2 2 0 0 1 2 -2h2" />
+        <path d="M4 16v2a2 2 0 0 0 2 2h2" />
+        <path d="M16 4h2a2 2 0 0 1 2 2v2" />
+        <path d="M16 20h2a2 2 0 0 0 2 -2v-2" />
+      </svg>
+      <svg id="mini" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="icon icon-tabler icons-tabler-outline icon-tabler-minimize">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M15 19v-2a2 2 0 0 1 2 -2h2" />
+        <path d="M15 5v2a2 2 0 0 0 2 2h2" />
+        <path d="M5 15h2a2 2 0 0 1 2 2v2" />
+        <path d="M5 9h2a2 2 0 0 0 2 -2v-2" />
+      </svg>
+    </div>
+    <div class="icon-button" id="playAllButton" tool-tip="Play all animations" onclick="playAll();">
+      <svg xmlns="http://www.w3.org/2000/svg" class="rotate-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="icon icon-tabler icons-tabler-outline icon-tabler-player-eject">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M5 12h14l-7 -8z" />
+        <path d="M5 16m0 1a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1z" />
+      </svg>
+    </div>
+    <div class="icon-button" id="loopButton" tool-tip="Play in loop or once" onclick="loopClick();">
+      <svg id="loop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+        <path d="M19.933 13.041a8 8 0 1 1 -9.925 -8.788c3.899 -1 7.935 1.007 9.425 4.747"></path>
+        <path d="M20 4v5h-5"></path>
+      </svg>
+      <svg id="once" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+        <path d="M5 12h.5m3 0h1.5m3 0h6"></path>
+        <path d="M13 18l6 -6"></path>
+        <path d="M13 6l6 6"></path>
+      </svg>
+    </div>
+
+    <div class="icon-button" tool-tip="Change background color">
+      <div id="colorIndicator">
+        <input type="color" value="#474956" oninput="changeColor(event);" />
       </div>
-      <p>Click on the Tauri logo to learn more about the framework</p>
+    </div>
 
-      <form class="row" id="greet-form">
-        <input id="greet-input" placeholder="Enter a name..." />
-        <button type="submit">Greet</button>
-      </form>
-      <p id="greet-msg"></p>
-    </main>
-  </body>
+    <div class="icon-button" tool-tip="Change playback speed" onclick="changeSpeed();">
+      <svg id="speed_0.5" class="speed-icon" xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-multiplier-0-5x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 16h2a2 2 0 1 0 0 -4h-2v-4h4" /><path d="M5 16v.01" /><path d="M15 16l4 -4" /><path d="M19 16l-4 -4" /></svg>
+      <svg id="speed_1" class="speed-icon selected" xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-multiplier-1x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 16v-8l-2 2" /><path d="M13 16l4 -4" /><path d="M17 16l-4 -4" /></svg>
+      <svg id="speed_2" class="speed-icon" xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-multiplier-2x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 16l4 -4" /><path d="M18 16l-4 -4" /><path d="M6 10a2 2 0 1 1 4 0c0 .591 -.417 1.318 -.816 1.858l-3.184 4.143l4 0" /></svg>
+
+    </div>
+
+  </div>
+  <pre id="fileContent"></pre>
+
+  <div id="lottie">
+  </div>
+
+</body>
+
 </html>
